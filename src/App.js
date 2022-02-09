@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './Header';
-import Select from './Select';
-import MainBanner from './MainBanner';
-import Footer from './Footer';
+import Header from './Header/Header';
+import Select from './Select/Select';
+import MainBanner from './MainBanner/MainBanner';
+import Footer from './Footer/Footer';
 
 function App() {
     return (

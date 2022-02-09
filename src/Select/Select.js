@@ -1,4 +1,3 @@
-import logo from './logo.png';
 import React, {useEffect} from "react";
 import './Select.css';
 import {Form, CloseButton} from 'react-bootstrap';

@@ -1,8 +1,8 @@
 import {Navbar, Nav, Container, Form, Button} from 'react-bootstrap';
 import React from 'react';
 import './Header.css';
-import logo from './logo.png';
-import find from './find.png';
+import logo from '../img/logo.png';
+import find from '../img/find.png';
 
 const Header = () => {
     return (<div>

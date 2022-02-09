@@ -1,0 +1,43 @@
+.selectbox {
+    background-color: #F9CCA4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.optionbox {
+    background-color: #F9CCA4;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.selectoption {
+    margin: 30px 15px;
+    font-size: 17px;
+    width: 300px;
+}
+
+.option {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.cancle {
+    font-size: 10px;
+}
+
+.resetbutton {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+}
+
+footer{
+    font-family: 'IM_Hyemin-Bold';
+    background: #F9CCA4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;
+}
+
+div#footer div#sbclogo img{
+    width: 200px;
+    margin: 0px 0px 0px 30px;
+}
+
+div#footer div#footer1 {
+    margin: 0px 0px 0px 30px;
+}
+
+div#footer div#footer1 h2{
+    margin: 20px 0px 0px 0px;
+}
+
+div#footer div#footer1 h3{
+    margin-top: 0px;
+}
+
+div#footer div#footer1 p{
+    font-size: 18px;
+    line-height: 23px;
+}
+
+div#footer div#frontMember{
+    margin: 0px 0px 0px 330px;
+}
+
+div#footer p{
+    margin: 5px 0px 0px 0px;
+}
+
+div#footer div#backMember{
+    margin: 0px 0px 0px 90px;
+    width: 150px;
+    text-align: left;
+}
+
+div#footer div#backMember h2 {
+    margin-left: 25px;
+}
+div#footer div#backMember p {
+    margin: 5px 0px 0px 25px;
+}
+
+div#footer div#backMember div#king p{
+    margin-left: 25px;
+}
+
+div#footer div#king img {
+    width: 20px;
+    float: left;
+}

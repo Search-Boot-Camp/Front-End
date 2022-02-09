@@ -1,0 +1,53 @@
+.maintitle {
+    /* position: absolute; */
+    /* left: 20%;
+    top: 12%;
+     */
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.hr {
+    /* position: absolute; */
+    width: 115vh;
+    /* flex-grow: 1; */
+    /* flex */
+    /* height: 0px; */
+    /* left: 32%;
+    top: 12%; */
+    border: 1px solid #C4C4C4;
+}
+
+.bannertitle {
+    display: flex;
+    flex-direction: row;
+    /* width: 80%; */
+    margin-left: 40px;
+    
+}
+
+.Frame {
+    margin: 60px 80px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+.mainBanner {
+    width: 88%;
+    margin-left: 40px;
+}
+
+.bnrimg {
+    height :120px;
+    background-color: bisque;
+}
+
+.h3 {
+    text-align: center;
+}

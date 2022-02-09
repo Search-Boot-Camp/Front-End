@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import '../ResetCSS.css';
+import './ResetCSS.css';
 import './MainBanner.css';
 import styled, { css } from 'styled-components';
 import "slick-carousel/slick/slick.css";

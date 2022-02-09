@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import './Footer.css';
+import logo from './../../img/site_logo.png';
+import wanggwan from './../../img/wanggwan.png';
 
 function Footer() {
     return (
         <div id="footer">
             <footer>
                 <div id="sbclogo">
-                    <img src="./site_logo.png"></img>
+                    <img src={logo}></img>
                 </div>
                 <div id="footer1">
                     <h2>SBC</h2>
@@ -38,7 +40,7 @@ function Footer() {
                     <p>김현빈 SMU</p>
                     <p>박보성 HUFS</p>
                     <div id="king">
-                        <img src="./wanggwan.png"></img>
+                        <img src={wanggwan}></img>
                         <p>
                             이서현 KIT</p>
                     </div>

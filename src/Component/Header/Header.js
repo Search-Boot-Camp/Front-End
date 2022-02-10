@@ -14,17 +14,17 @@ const Header = () => {
                             alt=""
                             src={logo}
                             width="30"
-                            height="30"/>{' '}
-                        Search Boot Camp
-                    </Navbar.Brand>
-                    <Nav>
+                            height="30"
+                            className="d-inline-block align-top"/>{' '}
+                        Search Boot Camp</Navbar.Brand>
+                    <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#search">부트 캠프 찾기</Nav.Link>
                     </Nav>
                     <Form>
                         <Form.Control type="string" placeholder="입력"/>
                     </Form>
-                    <Button variant="secondary" type="submit">
+                    <Button className="btn" variant="secondary" type="submit">
                         <img 
                             alt="" 
                             src={find}
@@ -32,9 +32,9 @@ const Header = () => {
                             height="23"
                             />
                     </Button>
-                </Container>
-            </Navbar>
-        </div>
+                    </Container>
+                </Navbar>
+            </div>
         </div>
         );
 };

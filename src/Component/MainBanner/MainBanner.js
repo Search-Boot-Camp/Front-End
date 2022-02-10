@@ -30,7 +30,6 @@ export default class MainBanner extends Component {
     `;
 
 
-
     const Frame = styled.div`
         margin: 60px 80px;
     `;

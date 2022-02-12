@@ -6,6 +6,7 @@ import Select from './Component/Select/Select';
 import MainBanner from './Component/MainBanner/MainBanner';
 import Footer from './Component/Footer/Footer';
 import ImgBox from './Component/ImgBox/ImgBox.js';
+import Details from './Component/Details/Details';
 import { Route, Routes } from 'react-router-dom';
 
 function MainPage()
@@ -67,10 +68,10 @@ function App() {
         <div className="App">
 
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/" element={<MainPage/>} exact={true}/>
                 <Route path="/search" element={<SearchPage/>}/>
-                <Route path="/detail" element={<DetailPage/>}/>
                 <Route path="/*" element={<ErrorPage/>}/>
+                <Route path="/detail" element={<Details />}/>
             </Routes>
         </div>
     );

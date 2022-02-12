@@ -1,0 +1,127 @@
+#frame {
+    margin: 60px;
+    width: 60vw;
+}
+
+#bannertitle {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#maintitle {
+    text-align: center;
+    width: 20vw;
+    /* margin-right: 30px; */
+    /* margin-left: 30px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#hr {
+    margin-left: 2px;
+    margin-top: 2vh;
+    width: 45vw;
+    border:1px solid #C4C4C4
+}
+
+#logo-container {
+    text-align: center;
+
+}
+
+.main-logo {
+    width: 100px;
+    height: auto;
+    object-fit: fill;
+    object-position: center center;
+}
+
+#bg {
+    background-color: #ffcc99;
+    margin-left: 20px;
+    width: 57vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+#left-side {
+    /* background-color:aqua; */
+    margin: 14px;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
+#name {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    margin: 15px 10px;
+    background-color: #8B8B8B;
+    border-radius: 15px;
+    color: azure;
+    
+}
+
+#bcimg {
+    width: 13vw;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+
+#right-side {
+    padding-top: 40px;
+    width: 15vw;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    text-align: center;
+}
+
+/* title이랑 detail font 속성 동일하니 시간 되면 하나만 작성해서 같이 쓰기  */
+.title {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 270%;
+
+    width: 150px;
+    height: auto;
+    /* display: flex;
+    flex-grow: 0; */
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 12px;
+    color: #5C5C5C;
+
+}
+
+.detail {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    line-height: 270%;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 12px;
+    color: #5C5C5C;
+
+}
+

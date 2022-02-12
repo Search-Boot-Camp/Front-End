@@ -1,8 +1,21 @@
-.maintitle {
+
+#frame {
+    margin: 40px 0px;
+}
+#bannertitle {
+    display: flex;
+    flex-direction: row;
+    /* width: 80%; */
+    margin-left: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#maintitle {
     /* position: absolute; */
     /* left: 20%;
     top: 12%;
-     */
+    */
     margin-right: 30px;
     margin-left: 30px;
     font-family: Roboto;
@@ -13,41 +26,37 @@
     color: #000000;
 }
 
-.hr {
-    /* position: absolute; */
-    width: 115vh;
-    /* flex-grow: 1; */
-    /* flex */
-    /* height: 0px; */
-    /* left: 32%;
-    top: 12%; */
-    border: 1px solid #C4C4C4;
+#hr {
+    margin-top: 2vh;
+    width: 55vw;
+    border:1px solid #C4C4C4
 }
 
-.bannertitle {
-    display: flex;
-    flex-direction: row;
-    /* width: 80%; */
-    margin-left: 40px;
-    
-}
 
-.Frame {
-    margin: 60px 80px;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
-}
-
-.mainBanner {
-    width: 88%;
+#mainbanner {
+    width: 90%;
     margin-left: 40px;
 }
 
 .bnrimg {
-    height :120px;
-    background-color: bisque;
-}
-
-.h3 {
+    height: 200px;
     text-align: center;
 }
+
+.imgs {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+    object-fit: fill;
+    object-position: center center;
+}
+
+.slick-slide {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #ffcc99;
+  }
+  

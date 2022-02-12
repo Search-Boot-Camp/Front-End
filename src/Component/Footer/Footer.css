@@ -8,24 +8,30 @@ footer{
     background: #F9CCA4;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    padding: 0px 0px 0px 20px;
-    margin-top: 500px;
+    height: 30%;
+    padding-bottom: 15px;
+}
+
+
+div#footer div#content{
+    margin: 0vh 0vw 0vh 10vw;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
 }
 
 div#footer div#sbclogo img{
     width: 200px;
-    margin: 5px 0px 0px 30px;
 }
 
 div#footer div#footer1 {
-    margin: 15px 0px 0px 30px;
     text-align: left;
 }
 
 div#footer div#footer1 h2{
-    margin: 20px 0px 0px 0px;
-    font-size: 30px;
+    margin-top: 25px;
+    font-size: 25px;
 }
 
 div#footer div#footer1 h3{
@@ -33,42 +39,53 @@ div#footer div#footer1 h3{
 }
 
 div#footer div#footer1 p{
+    width: 30vw;
     font-size: 18px;
     line-height: 23px;
 }
 
+
+div#footer div#member{
+    width: 300px;
+    display: flex;
+    margin-top: 4vh;
+    margin-left: 25vw;
+    line-height: 15px;
+    display: flex;
+}
+
 div#footer div#frontMember{
     text-align: left;
-    padding: 0px;
-    margin: 45px 0px 0px 330px;
 }
 
 div#footer div#frontMember h2{
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 25px;
 }
 
 div#footer p{
-    margin: 5px 0px 0px 0px;
+    margin-top: 12px;
+    font-size: 18px;
 }
 
+
 div#footer div#backMember{
-    margin: 45px 0px 0px 90px;
-    width: 150px;
+    margin-left: 50px;
     text-align: left;
 }
 
 div#footer div#backMember h2 {
-    margin-left: 25px;
-    margin-bottom: 12px;
-    font-size: 20px;
-}
-div#footer div#backMember p {
-    margin: 5px 0px 0px 25px;
+    font-size: 25px;
+    margin-left: 30px;
 }
 
+div#footer div#backMember p {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+
 div#footer div#backMember div#king p{
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 div#footer div#king img {

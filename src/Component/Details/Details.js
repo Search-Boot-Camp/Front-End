@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import './ResetCSS.css';
 import './Details.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 
 const Details = () => {
@@ -39,13 +41,15 @@ const Details = () => {
     const detailList = details.map(detail => <p className="detail" key={detail.id}>{detail.text}</p>);
 
     return (
-        <div id="frame">
+        <div>
+        <Header />
+        <div id="details-frame">
             <div id="logo-container">
                 <img className="main-logo" src="site_logo.png" alt=""/>
             </div>
-            <div id="bannertitle">
-                <div id="maintitle"> Search Boot Camp </div>
-                <hr id="hr" />
+            <div id="details-bannertitle">
+                <div id="details-maintitle"> Search Boot Camp </div>
+                <hr id="details-hr" />
             </div>
             <div id="bg">
                 <div id="left-side">
@@ -59,8 +63,9 @@ const Details = () => {
                 <p> {detailList} </p>
                 </div>
             </div>
-
         </div>
+        <Footer />
+    </div>
     )
 }
 

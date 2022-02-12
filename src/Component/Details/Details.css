@@ -1,17 +1,18 @@
-#frame {
-    margin: 60px;
+#details-frame {
+    margin-left: auto;
+    margin-right: auto;
     width: 60vw;
 }
 
-#bannertitle {
+#details-bannertitle {
     display: flex;
     flex-direction: row;
     overflow: hidden;
     margin-bottom: 10px;
 }
-#maintitle {
+#details-maintitle {
     text-align: center;
-    width: 20vw;
+    width: 15vw;
     /* margin-right: 30px; */
     /* margin-left: 30px; */
     font-family: Roboto;
@@ -22,10 +23,10 @@
     color: #000000;
 }
 
-#hr {
+#details-hr {
     margin-left: 2px;
     margin-top: 2vh;
-    width: 45vw;
+    width: 43vw;
     border:1px solid #C4C4C4
 }
 
@@ -35,19 +36,21 @@
 }
 
 .main-logo {
-    width: 100px;
+    width: 160px;
     height: auto;
     object-fit: fill;
     object-position: center center;
+    z-index: 0;
 }
 
 #bg {
     background-color: #ffcc99;
     margin-left: 20px;
     width: 57vw;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 #left-side {
     /* background-color:aqua; */
@@ -94,7 +97,7 @@
     font-size: 15px;
     line-height: 270%;
 
-    width: 150px;
+    width: auto;
     height: auto;
     /* display: flex;
     flex-grow: 0; */
@@ -111,7 +114,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    width: 25vw;
+    width: 30vw;
     height: auto;
     text-align: center;
     line-height: 270%;

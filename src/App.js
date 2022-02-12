@@ -54,24 +54,16 @@ function SearchPage()
     );
 }
 
-function DetailPage()
-{
-    return(
-        <div>
-            <h1>Detail Page</h1>
-        </div>
-    );
-}
 
 function App() {
     return (
         <div className="App">
 
             <Routes>
+                <Route path="/detail" element={<Details />}/>
                 <Route path="/" element={<MainPage/>} exact={true}/>
                 <Route path="/search" element={<SearchPage/>}/>
                 <Route path="/*" element={<ErrorPage/>}/>
-                <Route path="/detail" element={<Details />}/>
             </Routes>
         </div>
     );

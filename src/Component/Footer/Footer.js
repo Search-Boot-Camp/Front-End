@@ -44,7 +44,6 @@ function Footer() {
                         <p>
                             이서현 KIT</p>
                     </div>
-                    <p>최혁순 KWU</p>
                 </div>
             </footer>
         </div>

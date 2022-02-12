@@ -1,24 +1,32 @@
-.selectbox {
+#select-container
+{
     background-color: #F9CCA4;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 1090px;
+}
+.select-box
+{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+}
+
+.select-option {
+    border: green solid 2px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 5px 5px 5px;
 }
 
 .optionbox {
     background-color: #F9CCA4;
     display: flex;
-    flex-direction: row;
-    margin-left: 300px;
-    margin-right: 300px;
 }
 
-.selectoption {
-    margin: 30px 15px;
-    font-size: 17px;
-    width: 300px;
+.resetbutton {
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    margin: 0px 0px 15px 5px;
 }
 
 .option {
@@ -34,10 +42,7 @@
     font-size: 10px;
 }
 
-.resetbutton {
-    margin-left: 4px;
-    margin-right: 4px;
-    font-size: 15px;
-    color: black;
-    background-color: white;
+select option[value=""][disabled] 
+{
+	display: none;
 }

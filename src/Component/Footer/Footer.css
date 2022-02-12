@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'IM_Hyemin-Bold';
+    font-family: 'IM_Hyemin-Bold'; 
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
 }
 
@@ -9,20 +9,23 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    padding: 20px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 500px;
 }
 
 div#footer div#sbclogo img{
     width: 200px;
-    margin: 0px 0px 0px 30px;
+    margin: 5px 0px 0px 30px;
 }
 
 div#footer div#footer1 {
-    margin: 0px 0px 0px 30px;
+    margin: 15px 0px 0px 30px;
+    text-align: left;
 }
 
 div#footer div#footer1 h2{
     margin: 20px 0px 0px 0px;
+    font-size: 30px;
 }
 
 div#footer div#footer1 h3{
@@ -35,7 +38,14 @@ div#footer div#footer1 p{
 }
 
 div#footer div#frontMember{
-    margin: 0px 0px 0px 330px;
+    text-align: left;
+    padding: 0px;
+    margin: 45px 0px 0px 330px;
+}
+
+div#footer div#frontMember h2{
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 div#footer p{
@@ -43,13 +53,15 @@ div#footer p{
 }
 
 div#footer div#backMember{
-    margin: 0px 0px 0px 90px;
+    margin: 45px 0px 0px 90px;
     width: 150px;
     text-align: left;
 }
 
 div#footer div#backMember h2 {
     margin-left: 25px;
+    margin-bottom: 12px;
+    font-size: 20px;
 }
 div#footer div#backMember p {
     margin: 5px 0px 0px 25px;

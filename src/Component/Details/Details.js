@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
 
 import React, { useState } from 'react';
-import './ResetCSS.css';
 import './Details.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';

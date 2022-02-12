@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import StyledSlider from "react-slick";
-import './ResetCSS.css';
 import './MainBanner.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

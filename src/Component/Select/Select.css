@@ -12,7 +12,7 @@
 
 .select-option {
     /* border: green solid 2px; */
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     margin: 12px 5px 5px 5px;
 }
@@ -22,27 +22,27 @@
     display: flex;
 }
 
-.resetbutton {
-    font-size: 15px;
-    color: black;
-    background-color: white;
-    margin: 0px 0px 15px 5px;
-}
-
 .option {
     margin-left: 4px;
     margin-right: 4px;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     background-color: orange;
-    border-radius: 50%;
+    border: 1px solid orange;
+    border-radius: 30px;
 }
 
 .cancle {
     font-size: 10px;
+    padding: 0px;
 }
 
 select option[value=""][disabled] 
 {
 	display: none;
+}
+
+.resetbutton {
+    width: 28px;
+    height: 28px;
 }

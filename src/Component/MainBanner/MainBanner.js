@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import StyledSlider from "react-slick";
 import './MainBanner.css';
 import 'slick-carousel/slick/slick.css';
@@ -17,7 +17,7 @@ export default class MainBanner extends Component {
     slidesToShow: 1,
     slidesToScroll: 1,
     // centerPadding: '20px',
-    // autoplay: true
+    autoplay: true
   };
 
 
@@ -29,13 +29,12 @@ export default class MainBanner extends Component {
         </div>
         <div id="mainbanner">
         <StyledSlider {...settings}>
-          {/* <Link to="/"> */}
+          <Link to="/introduce">
           <div className="bnrimg">
             <img className="imgs" src="cropmbti.png" alt="" />
           </div>
-          {/* </Link> */}
+          </Link>
           {/* <Link to="/"> */}
-          
           <div className="bnrimg">
             <img className="imgs" src="hang99.jpg" alt="" />
           </div>

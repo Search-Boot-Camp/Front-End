@@ -1,0 +1,65 @@
+#logo-container {
+    text-align: center;
+
+}
+
+.main-logo {
+    width: 160px;
+    height: auto;
+    object-fit: fill;
+    object-position: center center;
+    z-index: 0;
+    margin-bottom: 10px;
+}
+
+.search-frame {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    /* background-color: aqua; */
+}
+
+#search-str {
+    text-align: center;
+    width: 15vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#search-box {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 30px 10px 10px 10px;
+}
+
+.img-box
+{
+    /* border: pink solid 2px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-box #bootimg-container
+{
+    /* border: black solid 2px; */
+    width:60vw;
+    height: auto;
+}
+
+/* .form-f-box 
+{
+    width:60vw;
+} */
+
+.form-f-box #form
+{
+    display:flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}

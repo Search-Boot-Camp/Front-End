@@ -5,9 +5,11 @@ import Header from './Component/Header/Header';
 import Select from './Component/Select/Select';
 import MainBanner from './Component/MainBanner/MainBanner';
 import Footer from './Component/Footer/Footer';
-import ImgBox from './Component/ImgBox/ImgBox.js';
+import ImgBox from './Component/ImgBox/ImgBox';
 import Details from './Component/Details/Details';
+import SearchPage from './Component/Search/Search';
 import { Route, Routes } from 'react-router-dom';
+
 
 function MainPage()
 {
@@ -45,20 +47,10 @@ function ErrorPage()
     );
 }
 
-function SearchPage()
-{
-    return(
-        <div>
-            <h1>Search Page</h1>
-        </div>
-    );
-}
-
 
 function App() {
     return (
         <div className="App">
-
             <Routes>
                 <Route path="/detail" element={<Details />}/>
                 <Route path="/" element={<MainPage/>} exact={true}/>

@@ -1,6 +1,6 @@
 import './ImgBox.css';
 import React, { useState } from 'react';
-import bootData from './bootdata.js';
+// import bootData from './bootdata.js';
 
 function BootCard(props)
 {
@@ -8,26 +8,23 @@ function BootCard(props)
     <div className="col-md-4">
       <div className="bootimg-box">
         <div className="img-info">
-          <img src={"bootimg"+(props.i) + ".png"} width="100%" height="100%"/>
+          <img alt="없음" src="./bootimg1.png" width="100%" height="100%"/>
         </div>
-        <h4 id="boot-title"> { props.boots.title } </h4>
-        <p id="boot-content"> {props.boots.content} and {props.boots.price}</p>
+        <h6 id="boot-brand-name"> { props.boots.bootcamp_name } </h6>
       </div>
     </div>
   );
 }
 
-function ImgBox() 
-{
-  let [boots,setBoots] = useState(bootData);
-  
+function ImgBox(props) 
+{ 
   return (
     <div>
       <div className="container" id="bootimg-container">
         <div className="row">
         {
-          boots.map((a,i)=>
-          { return <BootCard boots={boots[i]} i={i} key={i}/> })
+          props.data && props.data.map((item,num)=>
+          { return <BootCard boots={props.data[num]} num={num} key={num}/> })
         }
         </div>
       </div>

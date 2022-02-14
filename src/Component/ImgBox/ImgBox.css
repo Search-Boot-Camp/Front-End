@@ -36,9 +36,10 @@
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 
-#boot-title{
+#boot-brand-name{
     font-family: 'Cafe24Ssurround';
-    font-size: 30px;
+    font-size: 18px;
+    text-align: center;
 }
 
 #boot-content{

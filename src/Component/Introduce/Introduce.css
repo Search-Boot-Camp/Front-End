@@ -50,10 +50,21 @@
 }
 
 #frontMemberIntroduce h2 {
-    padding: 30px 20px 20px 40px;
+    font-size: 38px;
+    padding: 30px 20px 20px 38px;
     background-color: orange;
     width: 350px;
     border-radius: 30px;
+}
+
+#frontMemberIntroduce h3{
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+#backMemberIntroduce h3{
+    font-size: 36px;
+    margin-top: 40px;
 }
 
 #memberIntroduce #frontMemberIntroduce {
@@ -153,12 +164,12 @@
 }
 
 #backMemberIntroduce h2{
-    padding: 30px 20px 20px 40px;
+    font-size: 38px;
+    padding: 30px 20px 20px 38px;
     background-color: orange;
     width: 350px;
     border-radius: 30px;
 }
-
 #backMemberIntroduce {
     font-family: 'Cafe24Ssurround';
     font-size: 30px;

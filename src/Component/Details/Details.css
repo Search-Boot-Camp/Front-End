@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #details-frame {
     margin-left: auto;
     margin-right: auto;
@@ -5,28 +12,29 @@
 }
 
 #details-bannertitle {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     margin-bottom: 10px;
 }
+
 #details-maintitle {
     text-align: center;
-    width: 15vw;
-    /* margin-right: 30px; */
-    /* margin-left: 30px; */
-    font-family: Roboto;
+    width: 60vw;
+    margin: 10px;
+    font-family: 'Cafe24Ssurround';
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 21px;
     color: #000000;
 }
 
 #details-hr {
-    margin-left: 2px;
     margin-top: 2vh;
-    width: 55vw;
+    width: 40vw;
     border:1px solid #C4C4C4
 }
 
@@ -45,13 +53,15 @@
 
 #bg {
     background-color: #ffcc99;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 64vw;
     height: 80vh;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
 }
+
 #left-side {
     /* background-color:aqua; */
     margin: 14px;
@@ -61,16 +71,18 @@
 }
 
 #name {
-    font-family: Roboto;
+    font-family: 'Cafe24Ssurround';
+    width: 230px;
+    height: auto;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
     text-align: center;
     margin: 15px 10px;
     background-color: #8B8B8B;
     border-radius: 15px;
+    padding: 5px;
     color: azure;
-    
 }
 
 #bcimg {
@@ -82,6 +94,7 @@
 #right-side {
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 20px;
     width: 12vw;
     overflow:auto;
     /* background-color: aliceblue; */
@@ -95,13 +108,13 @@
 .title {
     
     overflow: hidden;
-    font-family: Noto Sans KR;
+    font-family: 'Cafe24Ssurround';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 270%;
 
-    width: 10vw;
+    width: 12vw;
     height: auto;
     /* display: flex;
     flex-grow: 0; */
@@ -115,10 +128,10 @@
 }
 
 .detail {
-    font-family: Noto Sans KR;
+    font-family: 'Cafe24Ssurround';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
     width: 30vw;
     height: auto;
     text-align: center;

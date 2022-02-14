@@ -47,19 +47,20 @@ const Details = () => {
                 <img className="main-logo" src="site_logo.png" alt=""/>
             </div>
             <div id="details-bannertitle">
+                <hr id="details-hr" />
                 <div id="details-maintitle"> Search Boot Camp </div>
                 <hr id="details-hr" />
             </div>
             <div id="bg">
                 <div id="left-side">
                     <p id="name">
-                        name
+                        name이 열롸 길텐데 어케 해야 이쁠까요
                     </p>
                     <img id="bcimg" src="site_logo.png" alt="" />
                 </div>
                 <div id="right-side">
-                <p> {titleList} </p>
-                <p> {detailList} </p>
+                    <p> {titleList} </p>
+                    <p> {detailList} </p>
                 </div>
             </div>
         </div>

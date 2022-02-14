@@ -9,4 +9,14 @@
 
 .form {
     display: flex;
+    width: 310px;
+}
+
+#findbt  {
+    border: 0;
+    background-color: black;
+}
+
+#findbt:hover{
+    background-color: rgb(64, 64, 64);
 }

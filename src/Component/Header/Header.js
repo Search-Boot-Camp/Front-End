@@ -26,10 +26,9 @@ const Header = () => {
             <div className='header-box'>
                 <Navbar>
                     <Container className="container-box">
-                        <Navbar.Brand href="/">
-                            <img alt="" src={logo} width="30" height="30"
-                                className="d-inline-block align-top"/>{' '}
-                            Search Boot Camp
+                        <Navbar.Brand className="sbcname" href="/">
+                            <img alt="" src={logo} width="30" height="30" />{' '}
+                            <p>Search Boot Camp</p>
                         </Navbar.Brand>
                         <Nav className="me-auto">
                             <Nav.Link href="/">Home</Nav.Link>

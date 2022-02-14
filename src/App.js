@@ -8,6 +8,7 @@ import Footer from './Component/Footer/Footer';
 import ImgBox from './Component/ImgBox/ImgBox';
 import Details from './Component/Details/Details';
 import SearchPage from './Component/Search/Search';
+import IntroducePage from './Component/Introduce/Introduce';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -47,7 +48,6 @@ function ErrorPage()
     );
 }
 
-
 function App() {
     return (
         <div className="App">
@@ -55,6 +55,7 @@ function App() {
                 <Route path="/detail" element={<Details />}/>
                 <Route path="/" element={<MainPage/>} exact={true}/>
                 <Route path="/search" element={<SearchPage/>}/>
+                <Route path="/introduce" element={<IntroducePage/>}/>
                 <Route path="/*" element={<ErrorPage/>}/>
             </Routes>
         </div>

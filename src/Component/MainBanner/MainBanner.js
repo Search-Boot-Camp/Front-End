@@ -16,8 +16,8 @@ export default class MainBanner extends Component {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerPadding: '20px',
-    autoplay: true
+    // centerPadding: '20px',
+    // autoplay: true
   };
 
     return (
@@ -30,7 +30,7 @@ export default class MainBanner extends Component {
         <StyledSlider {...settings}>
           {/* <Link to="/"> */}
           <div className="bnrimg">
-            <img className="imgs" src="cropmbti.png" alt="" />
+            <img className="introimgs" src="mbtiBanner.png" alt="" />
           </div>
           {/* </Link> */}
           {/* <Link to="/"> */}

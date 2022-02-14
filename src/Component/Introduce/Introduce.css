@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#introApp{
+    font-family: 'Cafe24Ssurround';
+    margin-left: 50px;
+}
+
+#siteIntroduce{
+    display: flex;
+}
+
+#siteIntroduce img{
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#siteIntroduce #siteComment{
+    margin-left: 20px;
+}
+
+#siteIntroduce h1{
+    font-family: 'Cafe24Ssurround';
+    margin-top: 75px;
+    font-size: 45px;
+}
+
+#siteIntroduce p {
+    line-height: 40px;
+    width: 900px;
+    font-size: 25px;
+}
+
+#memberIntroduce #memberTitle{
+    font-family: 'Cafe24Ssurround';
+    display: flex;
+    font-size: 30px;
+}
+
+#frontMemberIntroduce h2 {
+    padding: 30px 20px 20px 40px;
+    background-color: orange;
+    width: 350px;
+    border-radius: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce {
+    font-family: 'Cafe24Ssurround';
+    font-size: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce img{
+    border-radius: 80%;
+    width: 260px;
+}
+
+#memberIntroduce #frontMemberIntroduce #front1 {
+    margin-top: 50px;
+    display: flex;
+}
+
+#memberIntroduce #frontMemberIntroduce #front1 #front1text{
+    margin-left: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce #front2{
+    margin-top: 50px;
+    display: flex;
+}
+
+#memberIntroduce #frontMemberIntroduce #front2 #front2text{
+    margin-left: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce #front3{
+    margin-top: 50px;
+    display: flex;
+}
+
+#memberIntroduce #frontMemberIntroduce #front3 #front3text{
+    margin-left: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce #front4{
+    margin-top: 50px;
+    display: flex;
+}
+
+#memberIntroduce #frontMemberIntroduce #front4 #front4text{
+    margin-left: 30px;
+}
+
+#memberIntroduce #frontMemberIntroduce #front5{
+    margin-top: 50px;
+    display: flex;
+}
+
+#memberIntroduce #frontMemberIntroduce #front5 #front5text{
+    margin-left: 30px;
+}
+
+#sogam p{
+    margin-left: 80px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 35px;
+    width: 45vw;
+}
+
+#sogam5 p{
+    margin-left: 120px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 35px;
+    width: 45vw;
+}
+
+
+#sogam4 p{
+    margin-left: 56px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 35px;
+    width: 45vw;
+}
+
+#sogam1 p{
+    margin-left: 67px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 35px;
+    width: 45vw;
+}
+#backMemberIntroduce img{
+    border-radius: 50%;
+    width: 260px;
+}
+
+#backMemberIntroduce h2{
+    padding: 30px 20px 20px 40px;
+    background-color: orange;
+    width: 350px;
+    border-radius: 30px;
+}
+
+#backMemberIntroduce {
+    font-family: 'Cafe24Ssurround';
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+#back1{
+    margin-top: 50px;
+    display: flex;
+}
+
+#back1text{
+    margin-left: 30px;
+}
+
+#back2{
+    margin-top: 50px;
+    display: flex;
+}
+
+#back2text{
+    margin-left: 30px;
+}
+
+#back3{
+    margin-top: 50px;
+    display: flex;
+}
+
+#back3text{
+    margin-left: 30px;
+}
+
+#back4{
+    margin-top: 50px;
+    display: flex;
+}
+
+#back4text{
+    margin-left: 30px;
+}
+

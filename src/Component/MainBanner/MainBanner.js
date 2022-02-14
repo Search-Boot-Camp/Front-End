@@ -16,8 +16,8 @@ export default class MainBanner extends Component {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // centerPadding: '20px',
-    // autoplay: true
+    centerPadding: '20px',
+    autoplay: true
   };
 
 
@@ -37,7 +37,7 @@ export default class MainBanner extends Component {
           {/* <Link to="/"> */}
           
           <div className="bnrimg">
-            <img className="imgs" src="hang99.jpg" alt="" />
+            <img className="introimgs" src="introduceBanner.png" alt="" />
           </div>
           {/* </Link> */}
           {/* <Link to="/"> */}

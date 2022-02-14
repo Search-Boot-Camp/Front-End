@@ -32,16 +32,17 @@ const Search = () => {
                     <div className="form-f-box">
                         <Form id="form" onSubmit={onSubmit}>
                             <Form.Control type="string" onChange={onChange} placeholder="찾고 싶은 부트캠프를 검색하세요!"/>
-                            <Button variant="secondary" type="submit">
+                            <Button variant="secondary" type="submit" id="findbt"> 
                                 <img alt="" src={find} width="23" height="23"/>
                             </Button>
                         </Form>
                     </div>
                     <div id="search-box">
+                    <hr width="80%"/>
                         <div id="search-str">
                             검색 결과
                         </div>
-                        <hr width="90%"/>
+                        <hr width="80%"/>
                     </div>
                     <div className='img-box'>
                         <ImgBox/>

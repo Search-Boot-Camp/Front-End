@@ -17,7 +17,7 @@ export default class MainBanner extends Component {
     slidesToShow: 1,
     slidesToScroll: 1,
     // centerPadding: '20px',
-    autoplay: true
+    // autoplay: true
   };
 
 
@@ -31,10 +31,11 @@ export default class MainBanner extends Component {
         <StyledSlider {...settings}>
           {/* <Link to="/"> */}
           <div className="bnrimg">
-            <img className="imgs" src="cropmbti.jpg" alt="" />
+            <img className="imgs" src="cropmbti.png" alt="" />
           </div>
           {/* </Link> */}
           {/* <Link to="/"> */}
+          
           <div className="bnrimg">
             <img className="imgs" src="hang99.jpg" alt="" />
           </div>

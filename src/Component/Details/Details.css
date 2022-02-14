@@ -26,7 +26,7 @@
 #details-hr {
     margin-left: 2px;
     margin-top: 2vh;
-    width: 43vw;
+    width: 55vw;
     border:1px solid #C4C4C4
 }
 
@@ -46,7 +46,7 @@
 #bg {
     background-color: #ffcc99;
     margin-left: 20px;
-    width: 57vw;
+    width: 64vw;
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -80,8 +80,10 @@
 }
 
 #right-side {
-    padding-top: 40px;
-    width: 15vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 12vw;
+    overflow:auto;
     /* background-color: aliceblue; */
     display: flex;
     flex-grow: 1;
@@ -91,22 +93,25 @@
 
 /* title이랑 detail font 속성 동일하니 시간 되면 하나만 작성해서 같이 쓰기  */
 .title {
+    
+    overflow: hidden;
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 270%;
 
-    width: auto;
+    width: 10vw;
     height: auto;
     /* display: flex;
     flex-grow: 0; */
     background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     border-radius: 12px;
     color: #5C5C5C;
-
 }
 
 .detail {

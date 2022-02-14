@@ -20,7 +20,6 @@ export default class MainBanner extends Component {
     autoplay: true
   };
 
-
     return (
       <div id="frame">
         <div id="bannertitle">
@@ -42,7 +41,7 @@ export default class MainBanner extends Component {
           {/* </Link> */}
           {/* <Link to="/"> */}
           <div className="bnrimg">
-            <img className="imgs" src="ooah.jpg" alt="" />
+            <img className="introimgs" src="notionBanner.png" alt="" />
           </div>
           {/* </Link> */}
         </StyledSlider>

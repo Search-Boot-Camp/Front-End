@@ -1,8 +1,15 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #select-container
 {
     background-color: #F9CCA4;
     justify-content: space-between;
-    width: 1090px;
+    width: 1100px;
     margin-bottom: 10px;
 }
 .select-box
@@ -13,7 +20,8 @@
 
 .select-option {
     /* border: green solid 2px; */
-    font-size: 15px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 16px;
     font-weight: bold;
     margin: 12px 5px 5px 5px;
 }
@@ -23,21 +31,25 @@
     display: flex;
 }
 
+.selecttags{
+    margin: 10px 0px;
+}
 .option {
     margin-left: 4px;
     margin-right: 4px;
     margin-bottom: 9px;
-    font-size: 15px;
+    font-size: 17px;
+    padding: 5px 10px 5px 10px;
     color: white;
     background-color: orange;
     border: 1px solid orange;
     border-radius: 30px;
+    font-family: 'Cafe24SsurroundAir';
 }
 
 .cancle {
     font-size: 13px;
     margin-left: 5px;
-    padding: 0;
 }
 
 select option[value=""][disabled] 

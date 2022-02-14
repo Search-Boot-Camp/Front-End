@@ -149,7 +149,7 @@ function Select() {
                     <Form.Select size="sm" className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>+해당 프로그램의 분야</option>
+                            <option value="" disabled selected>해당 프로그램 분야</option>
                             {
                                 program.map((item) => (
                                     <option id={item} value={item} key={item}>
@@ -161,7 +161,7 @@ function Select() {
                     <Form.Select size="sm" className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>+기술 스택</option>
+                            <option value="" disabled selected>기술 스택</option>
                         {
                             skill.map((item) => (
                                 <option id={item} value={item} key={item}>
@@ -173,7 +173,7 @@ function Select() {
                     <Form.Select size="sm" className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>+모집 여부</option>
+                            <option value="" disabled selected>모집 여부</option>
                         {
                             recruit.map((item) => (
                                 <option id={item} value={item} key={item}>
@@ -185,7 +185,7 @@ function Select() {
                     <Form.Select size="sm" className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>+온/오프라인</option>
+                            <option value="" disabled selected>온/오프라인</option>
                         {
                             onoff.map((item) => (
                                 <option id={item} value={item} key={item}>
@@ -197,7 +197,7 @@ function Select() {
                     <Form.Select size="sm" className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>+국민내일배움카드 여부</option>
+                            <option value="" disabled selected>국민내일배움카드 여부</option>
                             
                         {
                             card.map((item) => (
@@ -210,7 +210,7 @@ function Select() {
                 </div>
 
                 <div className="optionbox">
-                <div>
+                <div className="selecttags">
                     {
                         Selected.map((selectTags) => (
                             <Button variant="outline-light" className="option" id={selectTags} value={selectTags}>{selectTags}

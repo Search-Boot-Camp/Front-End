@@ -41,8 +41,8 @@
     font-size: 17px;
     padding: 5px 10px 5px 10px;
     color: white;
-    background-color: orange;
-    border: 1px solid orange;
+    background-color: black;
+    border: 1px solid black;
     border-radius: 30px;
     font-family: 'Cafe24SsurroundAir';
 }
@@ -50,6 +50,8 @@
 .cancle {
     font-size: 13px;
     margin-left: 5px;
+    padding: 10px 0px 0px 0px;
+    background-color: white;
 }
 
 select option[value=""][disabled] 

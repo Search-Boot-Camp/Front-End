@@ -20,7 +20,6 @@ export default class MainBanner extends Component {
     // autoplay: true
   };
 
-
     return (
       <div id="frame">
         <div id="bannertitle">
@@ -31,18 +30,18 @@ export default class MainBanner extends Component {
         <StyledSlider {...settings}>
           {/* <Link to="/"> */}
           <div className="bnrimg">
-            <img className="imgs" src="cropmbti.png" alt="" />
+            <img className="introimgs" src="mbtiBanner.png" alt="" />
           </div>
           {/* </Link> */}
           {/* <Link to="/"> */}
           
           <div className="bnrimg">
-            <img className="imgs" src="hang99.jpg" alt="" />
+            <img className="introimgs" src="introduceBanner.png" alt="" />
           </div>
           {/* </Link> */}
           {/* <Link to="/"> */}
           <div className="bnrimg">
-            <img className="imgs" src="ooah.jpg" alt="" />
+            <img className="introimgs" src="notionBanner.png" alt="" />
           </div>
           {/* </Link> */}
         </StyledSlider>

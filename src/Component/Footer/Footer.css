@@ -56,7 +56,6 @@ div#footer div#footer1 p{
     line-height: 26px;
 }
 
-
 div#footer div#member{
     width: 350px;
     display: flex;
@@ -64,6 +63,12 @@ div#footer div#member{
     margin-left: 25vw;
     line-height: 15px;
     display: flex;
+}
+
+@media screen and (max-width: 1500px) {
+    div#footer div#member{
+        display: none;
+    }
 }
 
 div#footer div#frontMember{

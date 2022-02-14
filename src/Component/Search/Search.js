@@ -38,11 +38,11 @@ const Search = () => {
                         </Form>
                     </div>
                     <div id="search-box">
-                    <hr width="80%"/>
+                        <hr width="40%"/>
                         <div id="search-str">
                             검색 결과
                         </div>
-                        <hr width="80%"/>
+                        <hr width="40%"/>
                     </div>
                     <div className='img-box'>
                         <ImgBox/>

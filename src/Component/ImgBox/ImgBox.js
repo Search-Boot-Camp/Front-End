@@ -10,8 +10,8 @@ function BootCard(props)
         <div className="img-info">
           <img src={"bootimg"+(props.i) + ".png"} width="100%" height="100%"/>
         </div>
-        <h4> { props.boots.title } </h4>
-        <p> {props.boots.content} and {props.boots.price}</p>
+        <h4 id="boot-title"> { props.boots.title } </h4>
+        <p id="boot-content"> {props.boots.content} and {props.boots.price}</p>
       </div>
     </div>
   );

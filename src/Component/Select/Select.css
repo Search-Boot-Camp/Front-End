@@ -3,6 +3,7 @@
     background-color: #F9CCA4;
     justify-content: space-between;
     width: 1090px;
+    margin-bottom: 10px;
 }
 .select-box
 {
@@ -12,7 +13,7 @@
 
 .select-option {
     /* border: green solid 2px; */
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     margin: 12px 5px 5px 5px;
 }
@@ -25,7 +26,8 @@
 .option {
     margin-left: 4px;
     margin-right: 4px;
-    font-size: 13px;
+    margin-bottom: 9px;
+    font-size: 15px;
     color: white;
     background-color: orange;
     border: 1px solid orange;
@@ -33,8 +35,13 @@
 }
 
 .cancle {
-    font-size: 10px;
-    padding: 0px;
+    font-size: 13px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+#option btn btn-outline-light{
+    margin-bottom: 10px;
 }
 
 select option[value=""][disabled] 
@@ -43,6 +50,7 @@ select option[value=""][disabled]
 }
 
 .resetbutton {
-    width: 28px;
-    height: 28px;
+    margin-bottom: 13px;
+    width: 30px;
+    height: 30px;
 }

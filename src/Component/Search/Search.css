@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #logo-container {
     text-align: center;
 
 }
 
 .main-logo {
-    width: 160px;
+    width: 180px;
     height: auto;
     object-fit: fill;
     object-position: center center;
@@ -34,7 +42,13 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    margin: 30px 10px 10px 10px;
+    margin: 50px 0px 10px 0px;
+}
+
+#search-box #search-str {
+    font-family: 'Cafe24Ssurround';
+    font-size: 30px;
+    margin: 10px 10px 0px 10px;
 }
 
 .img-box
@@ -52,14 +66,10 @@
     height: auto;
 }
 
-/* .form-f-box 
-{
-    width:60vw;
-} */
 
 .form-f-box #form
 {
-    display:flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 70%;
+    display: flex;
+    margin-left: 170px;
 }

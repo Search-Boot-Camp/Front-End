@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Cafe24SsurroundAir';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,6 +23,7 @@
     /* left: 20%;
     top: 12%;
     */
+    font-family: 'Cafe24Ssurround';
     margin-right: 30px;
     margin-left: 30px;    
     font-style: normal;
@@ -35,7 +36,7 @@
 
 #hr {
     margin-top: 2vh;
-    width: 68vw;
+    width: 60vw;
     border:1px solid #C4C4C4
 }
 

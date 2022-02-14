@@ -1,15 +1,24 @@
 @font-face {
-    font-family: 'IM_Hyemin-Bold'; 
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 footer{
-    font-family: 'IM_Hyemin-Bold';
     background: #F9CCA4;
     display: flex;
     flex-wrap: wrap;
     height: 30%;
     padding-bottom: 15px;
+    margin-top: 100px;
 }
 
 
@@ -22,7 +31,7 @@ div#footer div#content{
 }
 
 div#footer div#sbclogo img{
-    width: 200px;
+    width: 250px;
 }
 
 div#footer div#footer1 {
@@ -30,25 +39,28 @@ div#footer div#footer1 {
 }
 
 div#footer div#footer1 h2{
-    margin-top: 25px;
-    font-size: 25px;
+    font-family: 'Cafe24Ssurround';
+    margin: 40px 0px 0px 0px;
+    font-size: 30px;
 }
 
 div#footer div#footer1 h3{
-    margin-top: 0px;
+    font-family: 'Cafe24Ssurround';
+    font-size: 22px;
 }
 
 div#footer div#footer1 p{
+    font-family: 'Cafe24SsurroundAir';
     width: 30vw;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 26px;
 }
 
 
 div#footer div#member{
-    width: 300px;
+    width: 350px;
     display: flex;
-    margin-top: 4vh;
+    margin-top: 5vh;
     margin-left: 25vw;
     line-height: 15px;
     display: flex;
@@ -59,36 +71,40 @@ div#footer div#frontMember{
 }
 
 div#footer div#frontMember h2{
+    font-family: 'Cafe24Ssurround';
     font-size: 25px;
 }
 
 div#footer p{
+    font-family: 'Cafe24SsurroundAir';
     margin-top: 12px;
     font-size: 18px;
 }
 
 
 div#footer div#backMember{
-    margin-left: 50px;
+    margin-left: 55px;
     text-align: left;
 }
 
 div#footer div#backMember h2 {
+    font-family: 'Cafe24Ssurround';
     font-size: 25px;
-    margin-left: 30px;
+    margin-left: 26px;
 }
 
 div#footer div#backMember p {
+    font-family: 'Cafe24SsurroundAir';
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 26px;
 }
 
 
 div#footer div#backMember div#king p{
-    margin-left: 30px;
+    margin-left: 26px;
 }
 
 div#footer div#king img {
-    width: 20px;
+    width: 19px;
     float: left;
 }

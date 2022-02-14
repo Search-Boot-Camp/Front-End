@@ -34,13 +34,13 @@
 #siteIntroduce h1{
     font-family: 'Cafe24Ssurround';
     margin-top: 75px;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 #siteIntroduce p {
     line-height: 40px;
     width: 900px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #memberIntroduce #memberTitle{
@@ -164,12 +164,12 @@
 }
 
 #backMemberIntroduce h2{
-    font-size: 38px;
-    padding: 30px 20px 20px 38px;
+    padding: 30px 20px 20px 40px;
     background-color: orange;
     width: 350px;
     border-radius: 30px;
 }
+
 #backMemberIntroduce {
     font-family: 'Cafe24Ssurround';
     font-size: 30px;

@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './Select.css';
-import {Form, CloseButton, Button, ToggleButton} from 'react-bootstrap';
+import {Form, CloseButton, Button} from 'react-bootstrap';
 import {useState} from 'react';
 import { ReactComponent as Refresh } from './Refresh.svg';
 
@@ -215,7 +215,7 @@ function Select() {
                                 <CloseButton onClick={() => cancle(selectTags)} className="cancle" aria-label="Hide"/></Button>
                         ))
                     }
-                    {(Reset == false || Selected.length === 0) ? null : <Refresh onClick={reset} className="resetbutton" />}
+                    {(Reset === false || Selected.length === 0) ? null : <Refresh onClick={reset} className="resetbutton" />}
                 </div>
             </div>
             </div>

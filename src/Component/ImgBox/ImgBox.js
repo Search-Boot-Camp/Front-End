@@ -1,5 +1,5 @@
 import './ImgBox.css';
-import React, { useState } from 'react';
+import React from 'react';
 // import bootData from './bootdata.js';
 
 function BootCard(props)

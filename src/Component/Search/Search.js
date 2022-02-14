@@ -74,7 +74,7 @@ const Search = () => {
 
                     <div>
                         {
-                            (data.length === 0 && search != " ") 
+                            (data.length === 0 && search !== " ") 
                                 ? <div id="result-str">검색 결과가 없습니다.</div>
                                 : <div className='img-box'><ImgBox data={data}/></div>
                         }

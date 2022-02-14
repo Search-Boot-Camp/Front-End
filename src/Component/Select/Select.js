@@ -129,9 +129,6 @@ function Select() {
             setReset(true);
         }
     }
-    useEffect(() => {
-        console.log("Selected : ", Selected);
-    }, [Selected]);
 
     const reset = () => {
         setSelected([]);
@@ -217,7 +214,7 @@ function Select() {
                                 <CloseButton onClick={() => cancle(selectTags)} className="cancle" aria-label="Hide"/></Button>
                         ))
                     }
-                    {(Reset == true) ? <Refresh onClick={reset} className="resetbutton" /> : null}
+                    {(Reset == false || Selected.length === 0) ? null : <Refresh onClick={reset} className="resetbutton" />}
                 </div>
             </div>
             </div>

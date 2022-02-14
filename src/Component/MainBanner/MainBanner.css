@@ -21,14 +21,15 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 21px;
     color: #000000;
 }
 
+
 #hr {
     margin-top: 2vh;
-    width: 55vw;
+    width: 68vw;
     border:1px solid #C4C4C4
 }
 

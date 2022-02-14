@@ -36,9 +36,9 @@ const Header = () => {
                             <Nav.Link href="/search">부트 캠프 찾기</Nav.Link>
                         </Nav>
                         <Form className='form' onSubmit={onSubmit}>
-                            <Form.Control type="string" onChange={onChange} placeholder="입력"/>
-                            <Button variant="secondary" type="submit">
-                                <img alt="" src={find} width="23" height="23"/>
+                            <Form.Control type="string" onChange={onChange} placeholder="찾고 싶은 부트캠프를 검색하세요! "/>
+                            <Button variant="secondary" type="submit" id="findbt">
+                                <img alt="" src={find} width="23" height="24"/>
                             </Button>
                         </Form>
                     </Container>

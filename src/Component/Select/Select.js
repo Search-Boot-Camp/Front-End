@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
 import './Select.css';
-import {Form, CloseButton, ListGroup} from 'react-bootstrap';
+import {Form, CloseButton, Button, ToggleButton} from 'react-bootstrap';
 import {useState} from 'react';
+import { ReactComponent as Refresh } from './Refresh.svg';
 
 function Select() {
     const program = [
@@ -106,6 +107,7 @@ function Select() {
     const card = ["X", "필수", "선택"];
 
     const [Selected, setSelected] = useState([]);
+    const [Reset, setReset] = useState(false);
     
     const selectedCheck = (id) => {
         if (Selected.find((Selected) => Selected === id))
@@ -124,6 +126,7 @@ function Select() {
                 ...current,
                 (event.target.value)
             ]);
+            setReset(true);
         }
     }
     useEffect(() => {
@@ -132,6 +135,7 @@ function Select() {
 
     const reset = () => {
         setSelected([]);
+        setReset(false);
     }
 
     const cancle = (id) => {
@@ -209,11 +213,11 @@ function Select() {
                 <div>
                     {
                         Selected.map((selectTags) => (
-                            <tag className="option" id={selectTags} value={selectTags}>{selectTags}
-                                <CloseButton onClick={() => cancle(selectTags)} className="cancle" aria-label="Hide"/></tag>
+                            <Button variant="outline-light" className="option" id={selectTags} value={selectTags}>{selectTags}
+                                <CloseButton onClick={() => cancle(selectTags)} className="cancle" aria-label="Hide"/></Button>
                         ))
                     }
-                    <button onClick={reset} className="resetbutton">옵션 초기화</button>
+                    {(Reset == true) ? <Refresh onClick={reset} className="resetbutton" /> : null}
                 </div>
             </div>
             </div>

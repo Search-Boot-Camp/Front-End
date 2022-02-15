@@ -55,7 +55,7 @@
     background-color: #ffcc99;
     margin-left: auto;
     margin-right: auto;
-    width: 64vw;
+    width: 68vw;
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -72,8 +72,6 @@
 
 #name {
     font-family: 'Cafe24Ssurround';
-    width: 230px;
-    height: auto;
     font-weight: 900;
     font-size: 28px;
     line-height: 40px;
@@ -83,20 +81,36 @@
     border-radius: 15px;
     padding: 5px;
     color: azure;
+    width: 15vw;
+    height: auto;
+}
+
+#name1 {
+    font-family: 'Cafe24Ssurround';
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin: 15px 10px;
+    background-color: #8B8B8B;
+    border-radius: 15px;
+    padding: 5px;
+    color: azure;
+    width: 15vw;
+    height: auto;
 }
 
 #bcimg {
-    width: 13vw;
+    width: 15vw;
     border-radius: 20px;
     margin: 0px 10px;
 }
 
 #right-side {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    width: 12vw;
-    overflow:auto;
+    margin: 40px 20px;
+    width: 15vw;
+    overflow-x:auto;
+    overflow-y:visible;
     /* background-color: aliceblue; */
     display: flex;
     flex-grow: 1;
@@ -145,4 +159,3 @@
     color: #5C5C5C;
 
 }
-

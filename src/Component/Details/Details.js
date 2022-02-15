@@ -4,9 +4,13 @@ import React, { useState } from 'react';
 import './Details.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
+// import styled {css} from 'styled-components';
 
 const Details = () => {
+
+    // const Name = styled.p`
+    
+    // `;
     const [names] = useState ([
         // 수정 예정
         { id:1, text:"교육 과정"},
@@ -54,7 +58,11 @@ const Details = () => {
             <div id="bg">
                 <div id="left-side">
                     <p id="name">
-                        name이 열롸 길텐데 어케 해야 이쁠까요
+                        길이가 긴 이름의 경우를 테스트합니다.
+                    </p>
+                    
+                    <p id="name">
+                        한 줄 이름
                     </p>
                     <img id="bcimg" src="site_logo.png" alt="" />
                 </div>

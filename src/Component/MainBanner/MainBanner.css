@@ -47,7 +47,7 @@
 
 .bnrimg {
     margin: 0;
-    height: 30vh;
+    height: auto;
 }
 
 .introimgs{
@@ -61,13 +61,23 @@
 }
 
 .slick-slide {
-    /* margin-left:20px;
-    margin-right:20px;  */
     box-sizing: content-box;
-    /* border-radius: 30px; */
     background-color: #ffcc99;
+    margin-bottom: 5px;
   }
 
-  .slick-list {
-    /* margin-left: -20px; */
-   }
+  /* 반응형 시도
+  /* 0~1046 */
+  /* @media (max-width: 1460px) {
+      body {
+          background-color: #C4C4C4;
+      }
+  }  */
+
+  /* 1460 ~ */
+  @media (min-width: 1460px) {
+      .bnrimg{
+          height: 30vh;
+          width: auto;
+      }
+  }

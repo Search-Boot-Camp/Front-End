@@ -33,7 +33,6 @@ export default class MainBanner extends Component {
                         <div className="bnrimg">
                             <img className="introimgs" src="mbtiBanner.png" alt=""/>
                         </div>
-                        {/* </Link> */}
                         <Link to="/introduce">
                         <div className="bnrimg">
                             <img className="introimgs" src="introduceBanner.png" alt=""/>
@@ -41,9 +40,13 @@ export default class MainBanner extends Component {
                         </Link>
                         {/* <Link to="/"> */}
                         <div className="bnrimg">
+                        <a
+                          target="_blank"
+                          href="https://www.likelion.net/univ/"
+                          rel="noreferrer" >
                             <img className="introimgs" src="notionBanner.png" alt=""/>
+                        </a>
                         </div>
-                        {/* </Link> */}
                     </StyledSlider>
                 </div>
             </div>

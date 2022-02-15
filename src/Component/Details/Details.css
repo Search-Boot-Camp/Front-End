@@ -18,6 +18,7 @@
     flex-direction: row;
     overflow: hidden;
     margin-bottom: 10px;
+    width: 68vw;
 }
 
 #details-maintitle {
@@ -34,7 +35,7 @@
 
 #details-hr {
     margin-top: 2vh;
-    width: 40vw;
+    width: 42vw;
     border:1px solid #C4C4C4
 }
 
@@ -85,20 +86,6 @@
     height: auto;
 }
 
-#name1 {
-    font-family: 'Cafe24Ssurround';
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 40px;
-    text-align: center;
-    margin: 15px 10px;
-    background-color: #8B8B8B;
-    border-radius: 15px;
-    padding: 5px;
-    color: azure;
-    width: 15vw;
-    height: auto;
-}
 
 #bcimg {
     width: 15vw;
@@ -157,5 +144,4 @@
     background-color: white;
     border-radius: 12px;
     color: #5C5C5C;
-
 }

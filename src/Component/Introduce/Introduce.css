@@ -140,7 +140,6 @@
     width: 45vw;
 }
 
-
 #sogam4 p{
     margin-left: 56px;
     font-family: 'Cafe24SsurroundAir';
@@ -158,13 +157,15 @@
     margin-top: 35px;
     width: 45vw;
 }
+
 #backMemberIntroduce img{
     border-radius: 50%;
     width: 260px;
 }
 
 #backMemberIntroduce h2{
-    padding: 30px 20px 20px 40px;
+    font-size: 38px;
+    padding: 30px 20px 20px 38px;
     background-color: orange;
     width: 350px;
     border-radius: 30px;

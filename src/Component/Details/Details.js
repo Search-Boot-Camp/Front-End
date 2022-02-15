@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 const Details = () => {
 
     // const Name = styled.p`
-    
+
     // `;
     const [names] = useState ([
         // 수정 예정
@@ -56,11 +56,7 @@ const Details = () => {
                 <hr id="details-hr" />
             </div>
             <div id="bg">
-                <div id="left-side">
-                    <p id="name">
-                        길이가 긴 이름의 경우를 테스트합니다.
-                    </p>
-                    
+                <div id="left-side">                    
                     <p id="name">
                         한 줄 이름
                     </p>

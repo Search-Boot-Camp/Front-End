@@ -30,7 +30,6 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
-    color: #000000;
 }
 
 
@@ -47,16 +46,17 @@
 }
 
 .bnrimg {
-    /* margin-top: 11em; */
-    height: 200px;
+    margin: 0;
+    height: 30vh;
 }
 
-.imgs {
+.introimgs{
+    width: 65vw;
     display: block;
-    margin-top: 10px;
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
     height: auto;
 }
 
@@ -67,6 +67,7 @@
     /* border-radius: 30px; */
     background-color: #ffcc99;
   }
+
   .slick-list {
     /* margin-left: -20px; */
    }

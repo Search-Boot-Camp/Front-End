@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import './Introduce.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -11,12 +10,12 @@ function Introduce(){
             <Header/>
             <div id="introApp">
             <div id="siteIntroduce">
-                <img id={sitelogo} src="site_logo.png"></img>
+                <img id={sitelogo} src="site_logo.png" alt="profile"></img>
                 <div id="siteComment">
                     <h1>Search Boot Camp</h1>
                     <p>최근 코로나로 정보화시대가 더욱 가속화가 되었고, 많은 사람들이 IT, SW 분야에<br/>
-                        뛰어들고 있습니다. 그로 인해 부트 캠프 또한 많이 생겨나고 있습니다. 이런 적지<br/> 
-                        않은 수의 부트캠프를 쉽게 비교할 수 있는 서비스를 제공하고자 멋쟁이사자처럼과 함께
+                        뛰어들고 있습니다. 그로 인해 부트 캠프 또한 많이 생겨나고 있습니다. 이런 적지
+                        않은 <br/> 수의 부트캠프를 쉽게 비교할 수 있는 서비스를 제공하고자 멋쟁이사자처럼과 함께<br/> 
                         SBC(Search Boot Camp)라는 프로젝트를 시작하였습니다.                
                     </p>
                 </div>
@@ -25,7 +24,7 @@ function Introduce(){
                 <div id="frontMemberIntroduce">
                     <h2> Front Member</h2>
                     <div id="front1">   
-                        <img src={mem5}></img>
+                        <img src={mem5} alt="profile"></img>
                         <div id="front1text">
                             <h3> 권은빈 🦁 </h3>
                             <p>덕성여자대학교</p>
@@ -40,7 +39,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="front2">  
-                        <img src={mem5}></img>
+                        <img src={mem5} alt="profile"></img>
                         <div id="front2text"> 
                             <h3> 신영한 🦁 </h3>
                             <p>금오공과대학교</p>
@@ -55,7 +54,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="front3">  
-                        <img src={mem5}></img>   
+                        <img src={mem5} alt="profile"></img>   
                         <div id="front3text">
                             <h3> 안재현 🦁 </h3>
                             <p>금오공과대학교</p>
@@ -70,7 +69,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="front4">  
-                        <img src={mem5}></img>
+                        <img src={mem5} alt="profile"></img>
                         <div id="front4text">
                             <h3> 이수화 🦁 </h3>
                             <p>금오공과대학교</p>
@@ -85,7 +84,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="front5">  
-                        <img src={mem5}></img> 
+                        <img src={mem5} alt="profile"></img> 
                         <div id="front5text">
                             <h3> 이혜린 🦁 </h3>
                             <p>상명대학교</p>
@@ -104,7 +103,7 @@ function Introduce(){
                 <div id="backMemberIntroduce">
                     <h2>Back Member</h2>
                     <div id="back1">  
-                        <img src={mem5}></img> 
+                        <img src={mem5} alt="profile"></img> 
                         <div id="back1text">
                             <h3>구현우 🦁 </h3>
                             <p>금오공과대학교</p>
@@ -119,7 +118,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="back2">  
-                        <img src={mem5}></img>
+                        <img src={mem5} alt="profile"></img>
                         <div id="back2text">
                             <h3>김현빈 🦁 </h3>
                             <p>상명대학교</p>
@@ -134,7 +133,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="back3">  
-                        <img src={mem5}></img> 
+                        <img src={mem5} alt="profile"></img> 
                         <div id="back3text">
                             <h3>박보성 🦁 </h3>
                             <p>한국외국어대학교</p>
@@ -149,7 +148,7 @@ function Introduce(){
                         </div>
                     </div>
                     <div id="back4">  
-                        <img src={mem5}></img>
+                        <img src={mem5} alt="profile"></img>
                         <div id="back4text">
                             <h3>이서현 🦁 </h3>
                             <p>금오공과대학교</p>

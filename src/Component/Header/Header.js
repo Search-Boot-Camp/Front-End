@@ -10,28 +10,30 @@ const Header = () => {
 
     return (
         <div>
-            <div className='header-box'>
-                <Navbar>
+                <Navbar className='header-box'>
                     <Container className="container-box">
-                        <Navbar.Brand className="sbcname" href="/">
-                            <img alt="" src={logo} width="30" height="30" />{' '}
-                            <p>Search Boot Camp</p>
-                        </Navbar.Brand>
-                        <Nav className="me-auto">
-                            {/* <Nav.Link href="/">Home</Nav.Link> */}
-                            <Nav.Link href="/search">
-                                <img id= "magnifier" alt="" src={search} width="30" height="30" />
+                        <div>
+                            <Navbar.Brand className="sbcname" href="/">
+                                <img alt="" src={logo} width="30" height="30"/>{' '}
+                                <p>Search Boot Camp</p>
+                            </Navbar.Brand>
+                        </div>
+                        <div>
+                            <Nav className="me-auto">
+                                {/* <Nav.Link href="/">Home</Nav.Link> */}
+                                <Nav.Link href="/search">
+                                    <img id="magnifier" alt="" src={search} width="30" height="30"/>
                                 </Nav.Link>
-                            <Nav.Link href="/">
-                                <img id= "desktop" alt="" src={desktop} width="30" height="30" />
+                                <Nav.Link href="/">
+                                    <img id="desktop" alt="" src={desktop} width="30" height="30"/>
                                 </Nav.Link>
-                            <Nav.Link href="/">
-                                <img id= "user" alt="" src={user} width="30" height="30" />
-                            </Nav.Link>
-                        </Nav>
+                                <Nav.Link href="/">
+                                    <img id="user" alt="" src={user} width="30" height="30"/>
+                                </Nav.Link>
+                            </Nav>
+                        </div>
                     </Container>
                 </Navbar>
-            </div>
         </div>
     );
 };

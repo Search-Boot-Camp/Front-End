@@ -50,3 +50,8 @@
 #findbt:hover{
     background-color: rgb(64, 64, 64);
 }
+
+#magnifier {
+    margin-left: 55vw;
+    opacity: 0.85;
+}

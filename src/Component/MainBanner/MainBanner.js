@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import StyledSlider from "react-slick";
 import './MainBanner.css';
 import 'slick-carousel/slick/slick.css';
@@ -23,7 +23,7 @@ export default class MainBanner extends Component {
             <div id="frame">
                 <div id="bannertitle">
                     <div id="maintitle">
-                        Weekly Boot Camp
+                        Welcome to our page
                     </div>
                     <hr id="hr"/>
                 </div>
@@ -33,19 +33,14 @@ export default class MainBanner extends Component {
                         <div className="bnrimg">
                             <img className="introimgs" src="mbtiBanner.png" alt=""/>
                         </div>
-                        <Link to="/introduce">
-                        <div className="bnrimg">
+                        <Link to="/introduce" className="bnrimg">
                             <img className="introimgs" src="introduceBanner.png" alt=""/>
-                        </div>
                         </Link>
                         {/* <Link to="/"> */}
                         <div className="bnrimg">
-                        <a
-                          target="_blank"
-                          href="https://www.likelion.net/univ/"
-                          rel="noreferrer" >
-                            <img className="introimgs" src="notionBanner.png" alt=""/>
-                        </a>
+                            <a target="_blank" href="https://www.likelion.net/univ/" rel="noreferrer">
+                                <img className="introimgs" src="notionBanner.png" alt=""/>
+                            </a>
                         </div>
                     </StyledSlider>
                 </div>

@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 const Details = () => {
 
     // const Name = styled.p`
-    
+
     // `;
     const [names] = useState ([
         // 수정 예정

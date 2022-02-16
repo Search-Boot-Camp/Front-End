@@ -8,7 +8,8 @@ function BootCard(props)
     <div className="col-md-4">
       <div className="bootimg-box">
         <div className="img-info">
-          <img alt="없음" src="./bootimg1.png" width="100%" height="100%"/>
+          {/* src={require(`./${props.boots.brand_name}.png`).default} */}
+          <img alt="없음" src={'./'+(props.boots.brand_name)+'.png'} width="100%" height="100%"/>
         </div>
         <h6 id="boot-brand-name"> { props.boots.bootcamp_name } </h6>
       </div>

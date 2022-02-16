@@ -3,8 +3,7 @@ import './Search.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ImgBox from '../ImgBox/ImgBox';
-import {Form, Button} from 'react-bootstrap';
-import find from './../../img/find.png';
+import {Form} from 'react-bootstrap';
 import axios from 'axios'
 
 const Search = () => {
@@ -14,6 +13,7 @@ const Search = () => {
     const onChange = (event) => { 
         setSearch(event.target.value);
      };
+
     // 검색창에서 돋보기버튼 눌렀을 때
     const onSubmit = () => { { console.log(search) } };
 
@@ -21,14 +21,12 @@ const Search = () => {
         let completed = false;
 
         if (search === " " || search === "") {
-            console.log("검색어를 입력해주세요!!");
             setData([]);
             return;
         }
 
         async function get() {
-            // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/boot
-            // camp/search?search=html
+            // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/search?search=html
             const result = await axios(`/api/bootcamp/search?search=${search}`)
             if (!completed) {
                 setData(result.data);
@@ -40,10 +38,10 @@ const Search = () => {
         get()
         return() => {
             completed = true
-            console.log("~");
+
         }
     }, [search])
-
+    
     return (
         <div>
             <Header/>
@@ -58,9 +56,6 @@ const Search = () => {
                                 type="string"
                                 onChange={onChange}
                                 placeholder="찾고 싶은 부트캠프를 검색하세요!"/>
-                            <Button variant="secondary" type="submit" id="findbt">
-                                <img alt="" src={find} width="23" height="23"/>
-                            </Button>
                         </Form>
                     </div>
 

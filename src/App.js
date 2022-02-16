@@ -9,6 +9,7 @@ import ImgBox from './Component/ImgBox/ImgBox';
 import Details from './Component/Details/Details';
 import SearchPage from './Component/Search/Search';
 import IntroducePage from './Component/Introduce/Introduce';
+import MbtiStartPage from './Component/MbtiStart/MbtiStart';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -56,6 +57,7 @@ function App() {
                 <Route path="/" element={<MainPage/>} exact={true}/>
                 <Route path="/search" element={<SearchPage/>}/>
                 <Route path="/introduce" element={<IntroducePage/>}/>
+                <Route path="/mbtistart" element={<MbtiStartPage/>}/>
                 <Route path="/*" element={<ErrorPage/>}/>
             </Routes>
         </div>

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mbti {
+    background-color: #000000;
+}
+.img {
+    width: 300px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question {
+    display: none;
+}
+.main-title {
+    font-family: Cafe24Ssurround;
+    font-size: 60px;
+    color: #F28D35;
+}
+.sub-title {
+    font-family: Cafe24Ssurround;
+    font-size: 24px;
+    font-weight: 100;
+    color: #ebebeb;
+}
+.updown-slash {
+    width: 166px;
+    margin: 0 auto;
+}
+.start-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-start {
+    font-family: Cafe24Ssurround;
+    font-size: 16px;
+    color:#ff9300;
+    background-color: #1f1f1f;
+    border:#1f1f1f;
+}
+.btn-start, .btn-start:visited, .btn-start:hover, .btn-start:active {
+    font-family: Cafe24Ssurround;
+    font-size: 30px;
+    border-radius: 50px;
+    height: 70px;
+    color:#000000;
+    background-color: #ff9300;
+    border:#000000;
+}
+.btn-start:active, #btn-start:focus {
+    background-color: #ff9300 !important;
+    border:#1f1f1f !important;
+    font-size: 30px;
+    border-radius: 50px;
+    height: 70px;
+    color:#000000;
+}

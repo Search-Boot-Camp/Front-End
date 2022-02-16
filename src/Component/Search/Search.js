@@ -14,10 +14,8 @@ const Search = () => {
     const onChange = (event) => { 
         setSearch(event.target.value);
      };
-    // 검색창에서 돋보기버튼 눌렀을 때
-    const onSubmit = () => { { console.log(search) } };
 
-    useEffect(() => {
+    const getData = () => {
         let completed = false;
 
         if (search === " " || search === "") {
@@ -42,7 +40,7 @@ const Search = () => {
             completed = true
             console.log("~");
         }
-    }, [search])
+    }
 
     return (
         <div>
@@ -53,12 +51,12 @@ const Search = () => {
                         <img className="main-logo" src="site_logo.png" alt=""/>
                     </div>
                     <div className="form-f-box">
-                        <Form id="form" onSubmit={onSubmit}>
+                        <Form id="form">
                             <Form.Control
                                 type="string"
                                 onChange={onChange}
                                 placeholder="찾고 싶은 부트캠프를 검색하세요!"/>
-                            <Button variant="secondary" type="submit" id="findbt">
+                            <Button variant="secondary" onClick = {getData} id="findbt">
                                 <img alt="" src={find} width="23" height="23"/>
                             </Button>
                         </Form>

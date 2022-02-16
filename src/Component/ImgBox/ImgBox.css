@@ -14,8 +14,8 @@
 
 #bootimg-container
 {
-    width: 1090px;
-
+    width: 1200px;
+    text-align: center;
 }
 
 .bootimg-box

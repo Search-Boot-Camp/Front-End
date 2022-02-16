@@ -31,7 +31,9 @@ export default class MainBanner extends Component {
                     <StyledSlider {...settings}>
                         {/* <Link to="/"> */}
                         <div className="bnrimg">
-                            <img className="introimgs" src="mbtiBanner.png" alt=""/>
+                            <a target="_blank" href="http://sbc-mbti.com.s3-website.ap-northeast-2.amazonaws.com/" rel="noreferrer">
+                                <img className="introimgs" src="mbtiBanner.png" alt=""/>
+                            </a>
                         </div>
                         <Link to="/introduce" className="bnrimg">
                             <img className="introimgs" src="introduceBanner.png" alt=""/>

@@ -49,12 +49,11 @@ function ErrorPage()
 }
 
 function App() {
-
     return (
         <div className="App">
             <Routes>
+                <Route path="/detail" element={<Details />}/>
                 <Route path="/" element={<MainPage/>} exact={true}/>
-                <Route path="/detail/:id" element={<Details/>}/>
                 <Route path="/search" element={<SearchPage/>}/>
                 <Route path="/introduce" element={<IntroducePage/>}/>
                 <Route path="/*" element={<ErrorPage/>}/>

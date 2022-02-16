@@ -8,7 +8,7 @@
 #details-frame {
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 600vw;
 }
 
 #details-bannertitle {
@@ -57,7 +57,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 68vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -93,7 +93,7 @@
     margin: 0px 10px;
 }
 
-#right-side {
+.lists {
     margin: 40px 20px;
     width: 15vw;
     overflow-x:auto;
@@ -101,7 +101,7 @@
     /* background-color: aliceblue; */
     display: flex;
     flex-grow: 1;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -115,7 +115,7 @@
     font-size: 19px;
     line-height: 270%;
 
-    width: 12vw;
+    width: 21vw;
     height: auto;
     /* display: flex;
     flex-grow: 0; */
@@ -128,20 +128,21 @@
     color: #5C5C5C;
 }
 
-.detail {
-    font-family: 'Cafe24Ssurround';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    width: 30vw;
-    height: auto;
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+#linkbt {
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 20px;
     text-align: center;
-    line-height: 270%;
-    flex-grow: 1;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: white;
-    border-radius: 12px;
-    color: #5C5C5C;
+    margin: 0px 10px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    color: white;
+    width: 15vw;
+    height: auto;
 }

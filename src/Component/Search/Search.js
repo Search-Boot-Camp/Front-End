@@ -9,7 +9,7 @@ import axios from 'axios'
 import find from './../../img/find.png';
 
 const Search = () => {
-
+    const [flag, setFlag] = useState(false);
     const [search, setSearch] = useState(" ");
     const [data, setData] = useState([]);
     const onChange = (event) => { 
@@ -33,9 +33,10 @@ const Search = () => {
             // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/boot
             // camp/search?search=html
             const result = await axios(`http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/search?search=${search}`)
-
+            
             if (!completed) {
                 setData(result.data);
+                setFlag(true);
                 // data 출력
                 console.log(data);
             }
@@ -77,11 +78,16 @@ const Search = () => {
                         </div>
                         <hr width="80%"/>
                     </div>
-
                     <div>
                         {
-                            (data.length === 0 && search !== " ") 
-                                ? <div id="result-str">검색 결과가 없습니다.</div>
+                            (data.length === 0 && flag === false) ? <div id="result-str">검색을 해주세요!</div>
+                            : <div className='img-box'><ImgBox data={data}/></div>
+                        }
+                    </div>
+                    <div>
+                        {
+                            (data.length === 0 && flag === true) 
+                                ? <div id="result-str">검색 결과가 없습니다</div>
                                 : <div className='img-box'><ImgBox data={data}/></div>
                         }
                     </div>

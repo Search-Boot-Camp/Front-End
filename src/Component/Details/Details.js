@@ -2,14 +2,13 @@
 
 import React, { useState } from 'react';
 import './Details.css';
+import logo from './../../img/site_logo.png';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 // import styled {css} from 'styled-components';
 
 const Details = () => {
-
     // const Name = styled.p`
-
     // `;
     const [names] = useState ([
         // 수정 예정
@@ -48,7 +47,7 @@ const Details = () => {
         <Header />
         <div id="details-frame">
             <div id="logo-container">
-                <img className="main-logo" src="site_logo.png" alt=""/>
+                <img className="main-logo" src={logo} alt="없음"/>
             </div>
             <div id="details-bannertitle">
                 <hr id="details-hr" />
@@ -60,7 +59,7 @@ const Details = () => {
                     <p id="name">
                         한 줄 이름
                     </p>
-                    <img id="bcimg" src="site_logo.png" alt="" />
+                    <img id="bcimg" src={logo} alt="" />
                 </div>
                 <div id="right-side">
                     <p> {titleList} </p>

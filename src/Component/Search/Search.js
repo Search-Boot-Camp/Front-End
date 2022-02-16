@@ -32,7 +32,7 @@ const Search = () => {
         async function get() {
             // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/boot
             // camp/search?search=html
-            const result = await axios(`/api/bootcamp/search?search=${search}`)
+            const result = await axios(`http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/search?search=${search}`)
             if (!completed) {
                 setData(result.data);
                 // data 출력

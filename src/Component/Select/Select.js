@@ -171,7 +171,7 @@ function Select() {
         async function get() {
             // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/option/?
             // program=front-end&tech_stack=css
-            const result = await axios(`/api/bootcamp/option/?${query}`)
+            const result = await axios(`http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/option/?${query}`)
             if (!completed) {
                 // query에 따른 데이터 세팅
                 setData(result.data);
@@ -211,7 +211,7 @@ function Select() {
                         <option value="" disabled="disabled" selected="selected">기술 스택</option>
                         {
                             skill.map((item) => (
-                                <option id={"skill=" + item} value={`skill=${item}`} key={item}>
+                                <option id={"skill=" + item} value={`tech_stack=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
@@ -225,7 +225,7 @@ function Select() {
                         <option value="" disabled="disabled" selected="selected">모집 여부</option>
                         {
                             recruit.map((item) => (
-                                <option id={"recruit" + item} value={`recruit=${item}`} key={item}>
+                                <option id={"recruit" + item} value={`accept=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
@@ -239,7 +239,7 @@ function Select() {
                         <option value="" disabled="disabled" selected="selected">온/오프라인</option>
                         {
                             onoff.map((item) => (
-                                <option id={"onoff" + item} value={`onoff=${item}`} key={item}>
+                                <option id={"onoff" + item} value={`on_offline=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
@@ -253,7 +253,7 @@ function Select() {
                         <option value="" disabled="disabled" selected="selected">국민내일배움카드 여부</option>
                         {
                             card.map((item) => (
-                                <option id={"card" + item} value={`card=${item}`} key={item}>
+                                <option id={"card" + item} value={`k_digital=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))

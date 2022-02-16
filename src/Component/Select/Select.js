@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Select.css';
 import {Form, CloseButton, Button} from 'react-bootstrap';
-import {useState} from 'react';
-import { ReactComponent as Refresh } from './Refresh.svg';
+import {ReactComponent as Refresh} from './Refresh.svg';
+import ImgBox from '../ImgBox/ImgBox';
+import axios from 'axios'
 
 function Select() {
     const program = [
@@ -32,7 +33,7 @@ function Select() {
         "PM(프로덕트매니지먼트)",
         "기타"
     ];
-    
+
     const skill = [
         "Java",
         "Jupiter",
@@ -103,103 +104,156 @@ function Select() {
         "Dogma",
         "Sketch"
     ];
+
     const recruit = ["모집중", "모집 마감", "모집 예정"];
     const onoff = ["온라인", "오프라인", "온/오프라인 병행"];
     const card = ["X", "필수", "선택"];
 
     const [Selected, setSelected] = useState([]);
     const [Reset, setReset] = useState(false);
-    
+    const [query, setQuery] = useState(" ");
+    const [data, setData] = useState([]);
+    let queryTemp = "";
+
+
     const selectedCheck = (id) => {
-        if (Selected.find((Selected) => Selected === id))
-        {
+        if (Selected.find((Selected) => Selected === id)) {
             return 0;
-        }
-        else
+        } else 
             return 1;
-    };
-    
+        };
+
     const handleChangeSelect = (event) => {
 
-        if(selectedCheck(event.target.value) === 1)
-        {
+        if (selectedCheck(event.target.value) === 1) {
             setSelected((current) => [
                 ...current,
                 (event.target.value)
             ]);
+
+            if(query === " " || query === "")
+            { setQuery(event.target.value);}
+
+            else{ setQuery(query+"&"+(event.target.value));}
+
             setReset(true);
         }
     }
 
     const reset = () => {
         setSelected([]);
+        setQuery(" ");
+        setData([]);
         setReset(false);
     }
 
     const cancle = (id) => {
-        setSelected(Selected.filter((Selected) => Selected !== id));
+        setSelected(Selected.filter(Selected => Selected !== id));
+        console.log("filtering:", Selected.filter(Selected => Selected !== id));
+        queryTemp = Selected.filter(Selected => Selected !== id).join('&');
+        console.log(queryTemp);
+        setQuery(queryTemp);
     };
+    
+
+    useEffect(() => {
+        let completed = false;
+
+        // 쿼리 합치기 ! formatting : [program=front-end]&[tech_stack=css] 쿼리 초기 값
+        
+        if (query === " " || query === "") {
+            setData([]);
+            return;
+        }
+
+        // &앞에 붙여서 기존 쿼리 + 된 커리 다시 넣기 첫 번째 원소 &가 안붙어야함 두 번째 원소 부터 앞에 &가 붙도록
+
+        async function get() {
+            // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/option/?
+            // program=front-end&tech_stack=css
+            const result = await axios(`/api/bootcamp/option/?${query}`)
+            if (!completed) {
+                // query에 따른 데이터 세팅
+                setData(result.data);
+            }
+        }
+        get()
+        return() => {
+            completed = true
+        }
+    }, [query])
+
+    console.log(data);
 
     return (
         <div>
             <div className="container" id="select-container">
                 <div className="select-box">
-                    <Form.Select size="sm" className="select-option"
+                    <Form.Select
+                        size="sm"
+                        className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>해당 프로그램 분야</option>
-                            {
-                                program.map((item) => (
-                                    <option id={item} value={item} key={item}>
-                                        {item}
-                                    </option>
-                                ))
-                            }
+                        <option value="" disabled="disabled" selected="selected">해당 프로그램 분야</option>
+                        {
+                            program.map((item) => (
+                                <option id={"program=" + item} value={`program=${item}`} key={item}>
+                                    {item}
+                                </option>
+                            ))
+                        }
                     </Form.Select>
-                    <Form.Select size="sm" className="select-option"
+                    <Form.Select
+                        size="sm"
+                        className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>기술 스택</option>
+                        <option value="" disabled="disabled" selected="selected">기술 스택</option>
                         {
                             skill.map((item) => (
-                                <option id={item} value={item} key={item}>
+                                <option id={"skill=" + item} value={`skill=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
                         }
                     </Form.Select>
-                    <Form.Select size="sm" className="select-option"
+                    <Form.Select
+                        size="sm"
+                        className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>모집 여부</option>
+                        <option value="" disabled="disabled" selected="selected">모집 여부</option>
                         {
                             recruit.map((item) => (
-                                <option id={item} value={item} key={item}>
+                                <option id={"recruit" + item} value={`recruit=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
                         }
                     </Form.Select>
-                    <Form.Select size="sm" className="select-option"
+                    <Form.Select
+                        size="sm"
+                        className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>온/오프라인</option>
+                        <option value="" disabled="disabled" selected="selected">온/오프라인</option>
                         {
                             onoff.map((item) => (
-                                <option id={item} value={item} key={item}>
+                                <option id={"onoff" + item} value={`onoff=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
                         }
                     </Form.Select>
-                    <Form.Select size="sm" className="select-option"
+                    <Form.Select
+                        size="sm"
+                        className="select-option"
                         aria-label="Default select example"
                         onChange={handleChangeSelect}>
-                            <option value="" disabled selected>국민내일배움카드 여부</option>
-                            
+                        <option value="" disabled="disabled" selected="selected">국민내일배움카드 여부</option>
                         {
                             card.map((item) => (
-                                <option id={item} value={item} key={item}>
+                                <option id={"card" + item} value={`card=${item}`} key={item}>
                                     {item}
                                 </option>
                             ))
@@ -208,16 +262,29 @@ function Select() {
                 </div>
 
                 <div className="optionbox">
-                <div className="selecttags">
-                    {
-                        Selected.map((selectTags) => (
-                            <Button variant="outline-light" className="option" id={selectTags} value={selectTags}>{selectTags}
-                                <CloseButton onClick={() => cancle(selectTags)} className="cancle" aria-label="Hide"/></Button>
-                        ))
-                    }
-                    {(Reset === false || Selected.length === 0) ? null : <Refresh onClick={reset} className="resetbutton" />}
+                    <div className="selecttags">
+                        {
+                            Selected.map((selectTags) => (
+                                <Button variant="outline-light" className="option">
+                                    {
+                                        selectTags
+                                            .split('=')[1]
+                                    }
+                                    <CloseButton
+                                        onClick={() => cancle(selectTags)}
+                                        className="cancle"
+                                        aria-label="Hide"/>
+                                </Button>
+                            ))
+                        }
+                        {
+                            (Reset === false || Selected.length === 0)
+                                ? null
+                                : <Refresh onClick={reset} className="resetbutton"/>
+                        }
+                    </div>
                 </div>
-            </div>
+                <div className='img-box'><ImgBox data={data}/></div>
             </div>
         </div>
     );

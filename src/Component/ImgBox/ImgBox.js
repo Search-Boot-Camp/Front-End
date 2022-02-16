@@ -12,11 +12,8 @@ function BootCard(props) {
         <div className="col-md-4">
             <div className="bootimg-box">
                 <div className="img-info">
-                    <Link to={{
-                            pathname: `detail/`,
-                            state: { data: props.boots },
-                        }}>
-                        <img alt="없음" src={'./' + (props.boots.image_id) + '.png'} onError={onErrorImg} width="100%" height="100%"/>
+                    <Link to={`/detail/${props.boots.id}`}>
+                        <img alt="" src={'../../' + (props.boots.image_id) + '.png'} onError={onErrorImg} width="100%" height="100%"/>
                     </Link>
                 </div>
                 <h6 id="boot-brand-name">

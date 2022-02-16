@@ -27,7 +27,7 @@ const Header = () => {
                                 <Nav.Link href="/">
                                     <img id="desktop" alt="" src={desktop} width="30" height="30"/>
                                 </Nav.Link>
-                                <Nav.Link href="/">
+                                <Nav.Link href="/introduce">
                                     <img id="user" alt="" src={user} width="30" height="30"/>
                                 </Nav.Link>
                             </Nav>

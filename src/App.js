@@ -9,6 +9,7 @@ import ImgBox from './Component/ImgBox/ImgBox';
 import Details from './Component/Details/Details';
 import SearchPage from './Component/Search/Search';
 import IntroducePage from './Component/Introduce/Introduce';
+import Ad from './Component/Ad/Ad';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -30,6 +31,9 @@ function MainPage()
 
         <div>
             <ImgBox/>
+        </div>
+        <div>
+            <Ad />
         </div>
         
         <div>

@@ -80,3 +80,7 @@
     display: flex;
     margin-left: 170px;
 }
+
+.form-input {
+    width: 100%;
+}

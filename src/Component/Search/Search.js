@@ -15,6 +15,11 @@ const Search = () => {
         setSearch(event.target.value);
      };
 
+    const onKeyPressHandler=(e)=>{
+        if(e.key == 'Enter'){
+            getData();
+        }
+    }
     const getData = () => {
         let completed = false;
 
@@ -51,15 +56,18 @@ const Search = () => {
                         <img className="main-logo" src="site_logo.png" alt=""/>
                     </div>
                     <div className="form-f-box">
-                        <Form id="form">
-                            <Form.Control
+                        <div id="form">
+                            <input
+                                className ="form-input"
                                 type="string"
                                 onChange={onChange}
-                                placeholder="찾고 싶은 부트캠프를 검색하세요!"/>
+                                placeholder="찾고 싶은 부트캠프를 검색하세요!"
+                                onKeyPress={onKeyPressHandler}>
+                            </input>
                             <Button variant="secondary" onClick = {getData} id="findbt">
                                 <img alt="" src={find} width="23" height="23"/>
                             </Button>
-                        </Form>
+                        </div>
                     </div>
 
                     <div id="search-box">

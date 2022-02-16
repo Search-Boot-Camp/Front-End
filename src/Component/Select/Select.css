@@ -65,3 +65,8 @@ select option[value=""][disabled]
     height: 30px;
 }
 
+.img-box {
+    display: flex;
+    justify-content: center;
+}
+

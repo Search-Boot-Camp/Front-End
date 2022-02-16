@@ -9,11 +9,8 @@
 {
     background-color: #F9CCA4;
     justify-content: space-between;
-<<<<<<< HEAD
     width: 1800px;
-=======
     width: 1200px;
->>>>>>> c43e369c399d268741328624fcde7df0ec945524
     margin-bottom: 10px;
 }
 
@@ -70,14 +67,11 @@ select option[value=""][disabled]
     height: 30px;
 }
 
-<<<<<<< HEAD
 #img-box {
     padding : auto;
 }
-=======
+
 .img-box {
     display: flex;
     justify-content: center;
 }
-
->>>>>>> c43e369c399d268741328624fcde7df0ec945524

@@ -12,16 +12,14 @@
     font-style: normal;
 }
 
-<<<<<<< HEAD
 #bootimg-container
 {
     width: 1200px;
     text-align: center;
-=======
+}
+
 #bootimg-container {
     width: 1090px;
-
->>>>>>> c43e369c399d268741328624fcde7df0ec945524
 }
 
 .bootimg-box {

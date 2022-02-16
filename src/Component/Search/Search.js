@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Search.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ImgBox from '../ImgBox/ImgBox';
-import {Form} from 'react-bootstrap';
 import axios from 'axios'
 import find from './../../img/find.png';
 

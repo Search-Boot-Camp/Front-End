@@ -2,6 +2,7 @@ import './Introduce.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import mem5 from './../../img/mem5.jpg';
+import Ad from '../Ad/Ad';
 import sitelogo from './../../img/site_logo.png';
 
 function Introduce(){
@@ -162,6 +163,7 @@ function Introduce(){
                 </div>
             </div>
         </div>
+        <Ad />
         <Footer/>
         
         </div>

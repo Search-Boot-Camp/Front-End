@@ -5,6 +5,7 @@ import './Details.css';
 import logo from './../../img/site_logo.png';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Ad from '../Ad/Ad';
 // import styled {css} from 'styled-components';
 
 const Details = () => {
@@ -67,6 +68,7 @@ const Details = () => {
                 </div>
             </div>
         </div>
+        <Ad />
         <Footer />
     </div>
     )

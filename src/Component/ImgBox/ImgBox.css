@@ -1,42 +1,46 @@
 @font-face {
     font-family: 'Cafe24Ssurround';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cafe24SsurroundAir';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+<<<<<<< HEAD
 #bootimg-container
 {
     width: 1200px;
     text-align: center;
+=======
+#bootimg-container {
+    width: 1090px;
+
+>>>>>>> c43e369c399d268741328624fcde7df0ec945524
 }
 
-.bootimg-box
-{   
+.bootimg-box {
     height: 90%;
     padding-top: 20px;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
-.img-info
-{
+.img-info {
     height: 70%;
     margin-bottom: 15px;
 }
 
-#bootimg-container img{
+#bootimg-container img {
     border-radius: 18px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1);
 }
 
-#boot-brand-name{
+#boot-brand-name {
     font-family: 'Cafe24Ssurround';
     font-size: 23px;
     text-align: center;
@@ -44,7 +48,7 @@
     margin: auto;
 }
 
-#boot-content{
+#boot-content {
     font-family: 'Cafe24SsurroundAir';
     font-size: 20px;
 }

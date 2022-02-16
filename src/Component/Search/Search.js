@@ -3,6 +3,7 @@ import './Search.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ImgBox from '../ImgBox/ImgBox';
+import Ad from '../Ad/Ad';
 import {Form} from 'react-bootstrap';
 import axios from 'axios'
 import find from './../../img/find.png';
@@ -88,6 +89,7 @@ const Search = () => {
                 </div>
 
             </div>
+            <Ad />
             <Footer/>
         </div>
     )

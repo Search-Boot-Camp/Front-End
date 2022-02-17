@@ -1,13 +1,24 @@
+/* footer 하단으로 붙이기 도전 */
+
+html, body{
+    height: 100%;
+}
+
+#root{
+    min-height: 90%;
+}
+
 /* footer */
 
-footer {
-	background-color: #1E1E1E;
-    color: #545252;
+.footer {
+	/* background-color: #1E1E1E;
+    color: #545252; */
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     padding : 20px;
+    margin-top: 30px;
 }
 
 footer #sbclogo img{

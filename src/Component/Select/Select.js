@@ -35,7 +35,7 @@ function Select() {
     ];
     const skill = [
         "Python",
-        "Jupiter",
+        "Jupyter",
         "Django",
         "HTML",
         "CSS",

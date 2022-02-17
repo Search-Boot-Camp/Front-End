@@ -4,6 +4,7 @@ import {Form, CloseButton, Button} from 'react-bootstrap';
 import {ReactComponent as Refresh} from './Refresh.svg';
 import ImgBox from '../ImgBox/ImgBox';
 import axios from 'axios'
+import Ad from '../Ad/Ad';
 
 function Select() {
     const program = [
@@ -289,8 +290,16 @@ function Select() {
                         }
                     </div>
                 </div>
-                <div className='img-box'><ImgBox data={data}/></div>
+                <div>
+                        {
+                            (data.length === 0 && Selected.length === 0) ? <div id="result-str">옵션을 선택해주세요</div>
+                            : (data.length === 0 && Selected.length !== 0) ? <div id="result-str">검색 결과가 없습니다.</div>
+                            : <div className='img-box'><ImgBox data={data}/></div>
+                        }
+                </div>
+
             </div>
+            <Ad />
         </div>
     );
 }

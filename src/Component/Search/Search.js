@@ -80,13 +80,13 @@ const Search = () => {
                         <hr width="80%"/>
                     </div>
                     <div>
-                        {
-                            flag === false
-                                ? <div id="result-str">검색을 해주세요!</div>
-                                : ((data.length === 0) 
-                                    ? <div id="result-str">검색 결과가 없습니다</div>
-                                    : <div className='img-box'><ImgBox data={data}/></div>)
+                    {
+                            (data.length === 0 && flag === false) ? <div id="result-str">검색을 해주세요!</div>
+                            :(data.length === 0 && flag === true) 
+                            ? <div id="result-str">검색 결과가 없습니다</div>
+                            : <div className='img-box'><ImgBox data={data}/></div>
                         }
+
                     </div>
 
                 </div>

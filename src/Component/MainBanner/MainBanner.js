@@ -4,7 +4,7 @@ import StyledSlider from "react-slick";
 import './MainBanner.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import Ad from '../Ad/Ad';
 //  은빈 : 현재 이미지가 비율이 안맞는데 이미지 금방 수정하겠습니다~
 
 export default class MainBanner extends Component {

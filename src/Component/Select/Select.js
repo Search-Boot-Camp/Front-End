@@ -107,6 +107,7 @@ function Select() {
     const onoff = ["온라인", "오프라인", "온/오프라인 병행"];
     const card = ["국민내일배움카드 X", "국민내일배움카드 필수", "국민내일배움카드 선택사항"];
 
+    const [optionCheck,setOptionCheck] = useState([]);
     const [Selected, setSelected] = useState([]);
     const [Reset, setReset] = useState(false);
     const [query, setQuery] = useState(" ");
@@ -115,19 +116,30 @@ function Select() {
 
 
     const selectedCheck = (id) => {
-        if (Selected.find((Selected) => Selected === id)) {
+        if ((Selected.find((Selected) => Selected === id)))
+        {
+            alert(`${id.split("=")[1]}이 존재합니다.`);
+            console.log(Selected);
             return 0;
-        } else 
+        } 
+        else if((optionCheck.find((optionCheck) => optionCheck === id.split("=")[0])))
+        {
+            alert(`${id.split("=")[0]}이 존재합니다.`);
+            console.log(optionCheck);
+            return 0;   
+        }
+        else
+        console.log(optionCheck);
             return 1;
         };
 
     const handleChangeSelect = (event) => {
 
         if (selectedCheck(event.target.value) === 1) {
-            setSelected((current) => [
-                ...current,
-                (event.target.value)
-            ]);
+            setSelected((current) => [...current,(event.target.value)]);
+
+            if((event.target.value).split("=")[0] != 'tech_stack')
+                setOptionCheck((current) => [...current,(event.target.value).split("=")[0]]);
 
             if(query === " " || query === "")
             { setQuery(event.target.value);}
@@ -139,6 +151,7 @@ function Select() {
 
     const reset = () => {
         setSelected([]);
+        setOptionCheck([]);
         setQuery(" ");
         setData([]);
         setReset(false);
@@ -146,6 +159,7 @@ function Select() {
 
     const cancle = (id) => {
         setSelected(Selected.filter(Selected => Selected !== id));
+        setOptionCheck(optionCheck.filter(optionCheck => optionCheck !== id.split("=")[0]));
         queryTemp = Selected.filter(Selected => Selected !== id).join('&');
         setQuery(queryTemp);
     };

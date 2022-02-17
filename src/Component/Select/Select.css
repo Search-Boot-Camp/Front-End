@@ -9,14 +9,12 @@
 {
     background-color: #F9CCA4;
     justify-content: space-between;
-    width: 1800px;
     width: 1200px;
     margin-bottom: 10px;
 }
 
 .select-box
-{   
-    text-align : center;
+{
     display: flex;
     margin: 10px 0px 5px 0px;
 }
@@ -45,8 +43,8 @@
     font-size: 17px;
     padding: 5px 10px 5px 10px;
     color: white;
-    background-color: #60749E;
-    border: 1px solid #60749E;
+    background-color: orange;
+    border: 1px solid orange;
     border-radius: 30px;
     font-family: 'Cafe24SsurroundAir';
 }
@@ -58,7 +56,7 @@
 
 select option[value=""][disabled] 
 {
-	display: none;
+   display: none;
 }
 
 .resetbutton {

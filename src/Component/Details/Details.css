@@ -134,15 +134,19 @@
 }
 
 #linkbt {
-    font-family: 'Cafe24SsurroundAir';
-    font-size: 20px;
     text-align: center;
     margin: 18px auto;
     background-color: rgb(46, 45, 45);
     border-radius: 15px;
     border: 0;
     padding: 4px;
-    color: white;
     width: 15vw;
     height: auto;
+}
+
+#linktext {
+    font-size: 20px;
+    font-family: 'Cafe24SsurroundAir';
+    text-decoration: none;
+    color: white;
 }

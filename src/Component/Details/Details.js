@@ -52,6 +52,7 @@ const Details = () => {
 
 
     console.log("4", detailData.program);
+    //console.log("링크", detailData.link);
 
     const onErrorImg = (e) => {
         e.target.src = logo;
@@ -60,42 +61,44 @@ const Details = () => {
 
     return (
         <div>
-        <Header />
-        <div className='container' id="details-frame">
-            <div id="logo-container">
-                <img className="main-logo" src={logo} alt="없음"/>
-            </div>
-            <div id="details-bannertitle">
-                <hr id="details-hr" />
-                <div id="details-maintitle"> Search Boot Camp </div>
-                <hr id="details-hr" />
-            </div>
-            <div id="bg">
-                <div id="left-side">                   
-                    <p id="name">
-                    {detailData.brand_name}
-                    </p>
-                    <img id="bcimg" alt="" src={"../../"+(detailData.image_id)+".png"} onError={onErrorImg}/>
-                    <button type="button" id="linkbt" onclick="location.href={링크}">➡ 더 알아보기 ➡</button>
+            <Header />
+            <div className='container' id="details-frame">
+                <div id="logo-container">
+                    <img className="main-logo" src={logo} alt="없음"/>
                 </div>
-                <div className='lists'>
-                    <div className='list'> {curriculumList} </div> 
-                    <div className='list'> {termList} </div> 
-                    <div className='list'> {FieldList} </div>
-                    <div className='list'> {priceList} </div>
-                    <div className='list'> {recruitmentList} </div>
-                    <div className='list'> {startdateList} </div>
-                    <div className='list'> {onoffList} </div>
-                    <div className='list'> {PlaceList} </div>
-                    <div className='list'> {qualificationList} </div>
-                    <div className='list'> {processList} </div>
-                    <div className='list'> {cardList} </div>
+                <div id="details-bannertitle">
+                    <hr id="details-hr" />
+                    <div id="details-maintitle"> Search Boot Camp </div>
+                    <hr id="details-hr" />
+                </div>
+                <div id="bg">
+                    <div id="left-side">                   
+                        <p id="name">
+                        {detailData.brand_name}
+                        </p>
+                        <img id="bcimg" alt="" src={"../../"+(detailData.image_id)+".png"} onError={onErrorImg}/>
+                        <button type="button" id="linkbt">
+                            <a id="linktext" href={detailData.link}>➡ 더 알아보기 ➡</a>
+                        </button>
+                    </div>
+                    <div className='lists'>
+                        <div className='list'> {curriculumList} </div> 
+                        <div className='list'> {termList} </div> 
+                        <div className='list'> {FieldList} </div>
+                        <div className='list'> {priceList} </div>
+                        <div className='list'> {recruitmentList} </div>
+                        <div className='list'> {startdateList} </div>
+                        <div className='list'> {onoffList} </div>
+                        <div className='list'> {PlaceList} </div>
+                        <div className='list'> {qualificationList} </div>
+                        <div className='list'> {processList} </div>
+                        <div className='list'> {cardList} </div>
+                    </div>
                 </div>
             </div>
+            <Ad />
+            <Footer />
         </div>
-        <Ad />
-        <Footer />
-    </div>
     )
 }
 

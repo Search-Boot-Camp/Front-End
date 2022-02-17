@@ -26,12 +26,12 @@ const Details = () => {
         return() => { completed = true }
     }, [id]);
 
-    const curriculum = [{ id:1, text:"교육 과정"}, { id:11, text:detailData.program}];
+    const curriculum = [{ id:1, text:"교육 과정"}, { id:11, text:detailData.bootcamp_name}];
     const term = [{ id:2, text:"교육 기간"}, { id:21, text:detailData.training_period}];
     const Field = [{ id:3, text:"교육 분야"}, { id:31, text:detailData.tech_stack}];
     const price = [{ id:4, text:"가격"}, { id:41, text:detailData.price}];
     const recruitment = [{ id:5, text:"모집 여부"}, { id:51, text:detailData.accept}];
-    const startdate = [{ id:6, text:"모집 시작일"}, { id:61, text:detailData.apply_condition}];
+    const startdate = [{ id:6, text:"모집 시작일"}, { id:61, text:detailData.apply_start}];
     const onoff = [{ id:7, text:"온/오프라인"}, { id:71, text:detailData.on_offline}];
     const Place = [{ id:8, text:"장소"}, { id:81, text:detailData.place}];
     const qualification = [{ id:9, text:"지원 자격"}, { id:91, text:detailData.apply_condition}];

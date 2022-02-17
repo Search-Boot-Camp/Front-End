@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Search.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -8,16 +8,18 @@ import axios from 'axios'
 import find from './../../img/find.png';
 
 const Search = () => {
-    const [flag, setFlag] = useState(false);
     const [search, setSearch] = useState(" ");
     const [data, setData] = useState([]);
+    const [flag, setFlag] = useState(false);
+
     const onChange = (event) => { 
         setSearch(event.target.value);
      };
 
     const onKeyPressHandler=(e)=>{
-        if(e.key == 'Enter'){
+        if(e.key === 'Enter'){
             getData();
+            setFlag(true);
         }
     }
     const getData = () => {
@@ -35,7 +37,6 @@ const Search = () => {
             
             if (!completed) {
                 setData(result.data);
-                setFlag(true);
                 // data 출력
                 console.log(data);
             }
@@ -47,6 +48,7 @@ const Search = () => {
 
         }
     }
+
     return (
         <div>
             <Header/>
@@ -77,18 +79,13 @@ const Search = () => {
                         </div>
                         <hr width="80%"/>
                     </div>
-
                     <div>
                         {
-                            (data.length === 0 && flag === false) ? <div id="result-str">검색을 해주세요!</div>
-                            : <div className='img-box'><ImgBox data={data}/></div>
-                        }
-                    </div>
-                    <div>
-                        {
-                            (data.length === 0 && flag === true) 
-                                ? <div id="result-str">검색 결과가 없습니다</div>
-                                : <div className='img-box'><ImgBox data={data}/></div>
+                            flag === false
+                                ? <div id="result-str">검색을 해주세요!</div>
+                                : ((data.length === 0) 
+                                    ? <div id="result-str">검색 결과가 없습니다</div>
+                                    : <div className='img-box'><ImgBox data={data}/></div>)
                         }
                     </div>
 

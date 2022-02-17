@@ -74,5 +74,5 @@ select option[value=""][disabled]
 .img-box {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 10px;
 }

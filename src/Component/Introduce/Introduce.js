@@ -4,6 +4,11 @@ import Footer from '../Footer/Footer';
 import mem5 from './../../img/mem5.jpg';
 import Ad from '../Ad/Ad';
 import sitelogo from './../../img/site_logo.png';
+import seohyun from './../../img/seohyun.png';
+import geb from './../../img/geb.png';
+import syh from './../../img/syh.png';
+import khb from './../../img/khb.png';
+import ghw from './../../img/ghw.png';
 
 function Introduce(){
     return (
@@ -26,7 +31,7 @@ function Introduce(){
                     <h2> Front Member</h2>
                     <div id="front">   
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={geb} alt="profile"></img>
                         </div>
                         <div id="fronttext">
                             <h3> 권은빈 🦁 </h3>
@@ -43,7 +48,7 @@ function Introduce(){
                     </div>
                     <div id="front">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={syh} alt="profile"></img>
                         </div>
                         <div id="fronttext"> 
                             <h3> 신영한 🦁 </h3>
@@ -51,10 +56,9 @@ function Introduce(){
                             <p>@syhan7516</p>
                         </div>
                         <div id="sogam">
-                            <p>짧은 시간이었는데도 불구하고 팀원분들과 사이좋은 분위기에서 프로젝트에 참여할 수 있어서 
-                                넘 좋았고, 이렇게 멋쟁이 사자처럼에 참여하는 여러 대학운영진분들과 알게 되어서
-                                영광인 시간이었습니다. 만족스러운 결과물이 나와서 뿌듯하고, 처음 다루는 리액트에
-                                함께 도전해볼 수 있어 좋았습니다. 다음에도 같이 프젝하고 싶어요. 이멤버 리멤버💙
+                            <p>모든 것이 처음이었던 저에게 정말 좋은 기억, 경험을 남기게 해준 프로젝트였습니다.
+                                할 수 있을까. 라는 걱정보다는 할 수 있다. 라는 자신감을 갖게 해주신 협업, 동료분들 모두에게 감사합니다.
+                                앞으로도 더 많은 배움과 경험을 통해 더 성장하여 다음에는 멋진 모습으로 다시 볼 수 있었으면 좋겠습니다. 수고하셨습니다.
                             </p>
                         </div>
                     </div>
@@ -118,7 +122,7 @@ function Introduce(){
                     <h2>Back Member</h2>
                     <div id="back">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={ghw} alt="profile"></img>
                         </div>
                         <div id="backtext">
                             <h3>구현우 🦁 </h3>
@@ -137,7 +141,7 @@ function Introduce(){
                     </div>
                     <div id="back"> 
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={khb} alt="profile"></img>
                         </div>
                         <div id="backtext">
                             <h3>김현빈 🦁 </h3>
@@ -173,16 +177,14 @@ function Introduce(){
                             <p>@bosungpark</p>
                         </div>
                         <div id="sogam4">
-                            <p>짧은 시간이었는데도 불구하고 팀원분들과 사이좋은 분위기에서 프로젝트에 참여할 수 있어서 
-                                넘 좋았고, 이렇게 멋쟁이 사자처럼에 참여하는 여러 대학운영진분들과 알게 되어서
-                                영광인 시간이었습니다. 만족스러운 결과물이 나와서 뿌듯하고, 처음 다루는 리액트에
-                                함께 도전해볼 수 있어 좋았습니다. 다음에도 같이 프젝하고 싶어요. 이멤버 리멤버💙
+                            <p>좋은 팀과 함께할 수 있어서 즐거운 시간이었습니다. 개인적으로는 많은 역할을 하지는 못했지만, 많이 배우고 자극도 많이 받은 시간이었습니다. 
+                                규모가 제법 있는 팀이라 의견을 조율하기 힘드셨을텐데, 좋은 분위기로 끝까지 잘 이끌어주신 분들 너무 수고하셨습니다.
                             </p>
                         </div>
                     </div>
                     <div id="back">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={seohyun} alt="profile"></img>
                         </div>
                         <div id="backtext">
                             <h3>이서현 🦁 </h3>
@@ -190,11 +192,21 @@ function Introduce(){
                             <p>@kathyleesh</p>
                         </div>
                         <div id="sogam">
-                            <p>짧은 시간이었는데도 불구하고 팀원분들과 사이좋은 분위기에서 프로젝트에 참여할 수 있어서 
-                                넘 좋았고, 이렇게 멋쟁이 사자처럼에 참여하는 여러 대학운영진분들과 알게 되어서
-                                영광인 시간이었습니다. 만족스러운 결과물이 나와서 뿌듯하고, 처음 다루는 리액트에
-                                함께 도전해볼 수 있어 좋았습니다. 다음에도 같이 프젝하고 싶어요. 이멤버 리멤버💙
+                            <p>벌써 사이드 프로젝트가 마무리할 시간이네요! 
+                                25일은 매우 짧은 기간이지만 매일 함께하면서 하나의 프로젝트를 완성한 우리에겐 정말 긴 여정이었던 것 같습니다. 💕 
+                                PM, REACT, Django,등 많은 것들을 단기간에 알차게 배울 수 있는 값진 기회였던 것 같습니다! 
+                                모든 방면에서 늘 든든한 지원군이 되어주고 자면서도 코드를 생각해 준 현우님 &
+                                분위기 메이커를 담당해 주며 똑 부러지게 작업해준 Front 만능 은빈님 & 
+                                매일 밝은 에너지를 주며 첫날부터 프로젝트 가이드라인을 잡아주며 sbc의 길잡이가 되어준 섹시하고 Back 천재 현빈님 & 
+                                조용하지만 맡은 일을 가장 빨리 완벽하게 처리해 준 보성님 & 
+                                팀장 멘탈을 잡아주고 팀원들의 잘 풀리지 않는 코드를 같이 해결해 주며 sbc의 데이터 통신까지 책임져준 영한님 & 
+                                긍정적인 에너지를 가지고 난관에 부딪혀도 끝까지 해결하는 재현님 & 
+                                생각지도 못한 부분을 잘 캐치해 주고 뭐든 척척 구현에 주는 로직 구현 천재 수화님 
+                                & 늘 나서서 먼저 도와주려 하고 귀여운 목소리와 센스까지 겸비한 CSS 장인 혜린 님까지 여러분들이 있었기에 최고의 팀이라 생각합니다! 
+                                진짜 열정이 식지 않는 여러분 덕분에 더 책임감 가지고 즐기면서 할 수 있었습니다!
+                                모두들 정말 많이 수고하셨고 가장 부족함이 많은 팀장과 함께 끝까지 잘 해내 주신 팀원 분들 모두 너무 감사합니다!❤️ 
                             </p>
+
                         </div>
                     </div>
                 </div>

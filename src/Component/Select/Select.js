@@ -33,14 +33,13 @@ function Select() {
         "PM(프로덕트매니지먼트)",
         "기타"
     ];
-
     const skill = [
-        "Java",
+        "Python",
         "Jupiter",
         "Django",
         "HTML",
         "CSS",
-        "Javascript",
+        "JavaScript",
         "Ruby",
         "JQuery",
         "React",
@@ -50,7 +49,7 @@ function Select() {
         "R",
         "JSP",
         "Ajax",
-        "Spring Boot",
+        "SpringBoot",
         "Json",
         "Arduino",
         "C++",
@@ -62,7 +61,7 @@ function Select() {
         "Git",
         "SQL",
         "GitHub",
-        "React Native",
+        "ReactNative",
         "Kotlin",
         "XML",
         "Swift",
@@ -77,13 +76,13 @@ function Select() {
         "JDBC",
         "JPA",
         "AWS",
-        "Vanilla JS",
-        "Fire base",
+        "VanillaJS",
+        "Firebase",
         "Vue",
         "Oracle",
         "Node.JS",
         "Mybatis",
-        "Mongo DB",
+        "MongoDB",
         "Vue.JS",
         "Keras",
         "Gcp",
@@ -96,18 +95,17 @@ function Select() {
         "Kubernes",
         "Klaytn",
         "Excel",
-        "ROKIT Brick",
+        "ROKITBrick",
         "Nest",
         "AI",
         "PM",
-        "Block Chain",
+        "BlockChain",
         "Dogma",
         "Sketch"
     ];
-
-    const recruit = ["모집중", "모집 마감", "모집 예정"];
+    const recruit = ["모집중", "모집완료", "모집예정"];
     const onoff = ["온라인", "오프라인", "온/오프라인 병행"];
-    const card = ["X", "필수", "선택"];
+    const card = ["국민내일배움카드 X", "국민내일배움카드 필수", "국민내일배움카드 선택사항"];
 
     const [Selected, setSelected] = useState([]);
     const [Reset, setReset] = useState(false);
@@ -133,7 +131,6 @@ function Select() {
 
             if(query === " " || query === "")
             { setQuery(event.target.value);}
-
             else{ setQuery(query+"&"+(event.target.value));}
 
             setReset(true);
@@ -149,31 +146,25 @@ function Select() {
 
     const cancle = (id) => {
         setSelected(Selected.filter(Selected => Selected !== id));
-        console.log("filtering:", Selected.filter(Selected => Selected !== id));
         queryTemp = Selected.filter(Selected => Selected !== id).join('&');
-        console.log(queryTemp);
         setQuery(queryTemp);
     };
     
 
     useEffect(() => {
         let completed = false;
-
-        // 쿼리 합치기 ! formatting : [program=front-end]&[tech_stack=css] 쿼리 초기 값
         
+        console.log(query);
+
         if (query === " " || query === "") {
             setData([]);
             return;
         }
 
-        // &앞에 붙여서 기존 쿼리 + 된 커리 다시 넣기 첫 번째 원소 &가 안붙어야함 두 번째 원소 부터 앞에 &가 붙도록
-
         async function get() {
-            // http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/option/?
             // program=front-end&tech_stack=css
             const result = await axios(`http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/option/?${query}`)
             if (!completed) {
-                // query에 따른 데이터 세팅
                 setData(result.data);
             }
         }
@@ -183,7 +174,7 @@ function Select() {
         }
     }, [query])
 
-    console.log(data);
+    //console.log(data);
 
     return (
         <div>

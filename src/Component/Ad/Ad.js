@@ -7,7 +7,7 @@ class IntegratedAdfitComponent extends React.Component {
         return (
             <div className="Adsize">
                 <AdfitWebComponent
-                    adUnit="DAN-XX77ufbW1rV6aT9j"
+                    adUnit= "DAN-V3hXFORARKDyn1wP" 
                     adWidth="“728”"
                     adHeight="“90”"/>
             </div>

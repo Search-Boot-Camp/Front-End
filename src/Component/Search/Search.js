@@ -93,7 +93,7 @@ const Search = () => {
 
             </div>
             <Ad />
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

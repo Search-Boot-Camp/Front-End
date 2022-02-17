@@ -201,7 +201,7 @@ function Introduce(){
             </div>
         </div>
         <Ad />
-        <Footer/>
+        {/* <Footer/> */}
         
         </div>
     )

@@ -97,7 +97,7 @@ const Details = () => {
                 </div>
             </div>
             <Ad />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

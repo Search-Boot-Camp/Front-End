@@ -78,7 +78,7 @@ const Details = () => {
                         </p>
                         <img id="bcimg" alt="" src={"../../"+(detailData.image_id)+".png"} onError={onErrorImg}/>
                         <button type="button" id="linkbt">
-                            <a id="linktext" href={detailData.link}>➡ 더 알아보기 ➡</a>
+                            <a id="linktext" href={detailData.link} target="_blank" rel="noopener noreferrer">➡ 더 알아보기 ➡</a>
                         </button>
                     </div>
                     <div className='lists'>

@@ -2,6 +2,7 @@ import './Introduce.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import mem5 from './../../img/mem5.jpg';
+import mem1 from './../../img/mem1.jpg';
 import Ad from '../Ad/Ad';
 import sitelogo from './../../img/site_logo.png';
 
@@ -26,7 +27,7 @@ function Introduce(){
                     <h2> Front Member</h2>
                     <div id="front">   
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={mem1} alt="profile"></img>
                         </div>
                         <div id="fronttext">
                             <h3> 권은빈 🦁 </h3>

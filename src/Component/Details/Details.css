@@ -99,11 +99,15 @@
     overflow-x:auto;
     overflow-y:visible;
     /* background-color: aliceblue; */
+    /* line-height: 21px; */
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     text-align: center;
+    line-height: 270%;
 }
+
+.lists
 
 /* title이랑 detail font 속성 동일하니 시간 되면 하나만 작성해서 같이 쓰기  */
 .title {
@@ -113,8 +117,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 19px;
-    line-height: 270%;
-
+    /* line-height: 16px; */
     width: 21vw;
     height: auto;
     /* display: flex;

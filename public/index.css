@@ -2,16 +2,16 @@
 
 html, body{
     height: 100%;
-}
-
-#root{
+  }
+  
+  #root{
     min-height: 90%;
-}
-
-/* footer */
-
-.footer {
-	/* background-color: #1E1E1E;
+  }
+  
+  /* footer */
+  
+  .footer {
+  /* background-color: #1E1E1E;
     color: #545252; */
     width: 100%;
     height: auto;
@@ -19,98 +19,99 @@ html, body{
     flex-wrap: wrap;
     padding : 20px;
     margin-top: 30px;
-}
-
-footer #sbclogo img{
+  }
+  
+  footer #sbclogo img{
     width: 80px;
     margin-right: 20px;
     margin-left: 10px;
-}
-
-#Content{
+  }
+  
+  #Content{
     display: flex;
     flex-direction: row;
     width: 500px;
     margin-left: 90px;
-}
-
-#footer1{
+  }
+  
+  #footer1{
     width: 500px;
-}
-#footer1 h2{
+  }
+  #footer1 h2{
     font-size: 18px;
     margin-bottom: 0;
     font-family: 'Cafe24Ssurround';
-}
-#footer1 h3{
+  }
+  #footer1 h3{
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 5px;
     font-family: 'Cafe24Ssurround';
-}
-#footer1 p{
+  }
+  #footer1 p{
     margin-top: 0;
     font-size: 10px;
     line-height: 18px;
     font-family: 'Cafe24SsurroundAir';
-}
-
-#Member{
+  }
+  
+  #Member{
     width: 300px;
     display: flex;
     margin-left: 250px;
-}
-
-#head{
+  }
+  
+  #head{
     font-size: 16px;
     margin-bottom: 5px;
     margin-left: 20px;
     font-family: 'Cafe24Ssurround';
-}
-#member{
+  }
+  #member{
     margin: 1px;
     font-size: 10px;
     margin-left: 20px;
     font-family: 'Cafe24SsurroundAir';
-}
-
-#frontMember{
+  }
+  
+  #frontMember{
     width: 100px;
     margin-right: 10px;
-}
-#backMember{
+  }
+  #backMember{
     width: 100px;
     margin-left: 10px;
-}
-
-#Member #backMember #king img{
+  }
+  
+  #Member #backMember #king img{
     width: 15px;
     float: left;
-}
-
-@media screen and (max-width: 800px) {
+  }
+  
+  @media screen and (max-width: 800px) {
     .footer {
         display: none;
     }
-}
-
-#RC{
+  }
+  
+  #RC{
     width: 50%;
-}
-#LC{
+  }
+  #LC{
     width: 50%;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Cafe24Ssurround';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+  }
+  

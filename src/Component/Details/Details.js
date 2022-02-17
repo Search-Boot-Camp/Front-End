@@ -19,7 +19,7 @@ const Details = () => {
 
         async function get()
         {
-            const result = await axios(`/api/bootcamp/${id}`);
+            const result = await axios(`http://ec2-13-209-65-110.ap-northeast-2.compute.amazonaws.com:8000/api/bootcamp/${id}`);
             if(!completed) { setDetailData(result.data); }
         }
         get()

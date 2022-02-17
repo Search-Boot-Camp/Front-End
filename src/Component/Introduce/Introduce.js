@@ -9,6 +9,9 @@ import geb from './../../img/geb.png';
 import syh from './../../img/syh.png';
 import khb from './../../img/khb.png';
 import ghw from './../../img/ghw.png';
+import jh from './../../img/jh.png';
+import lhr from './../../img/lhr.png';
+import lsh from './../../img/lsh.png';
 
 function Introduce(){
     return (
@@ -64,7 +67,7 @@ function Introduce(){
                     </div>
                     <div id="front">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={jh} alt="profile"></img>
                         </div> 
                         <div id="fronttext">
                             <h3> 안재현 🦁 </h3>
@@ -83,7 +86,7 @@ function Introduce(){
                     </div>
                     <div id="front">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={lsh} alt="profile"></img>
                         </div>
                         <div id="fronttext">
                             <h3> 이수화 🦁 </h3>
@@ -101,7 +104,7 @@ function Introduce(){
                     </div>
                     <div id="front">  
                         <div id="image"> 
-                            <img src={mem5} alt="profile"></img>
+                            <img src={lhr} alt="profile"></img>
                         </div>
                         <div id="fronttext">
                             <h3> 이혜린 🦁 </h3>

@@ -42,7 +42,7 @@ function MainPage()
             <div id="error">
                 <div> 
                     <p>여러분<br/>
-                    지금당장<br/>화면을<br/>180도<br/>돌리고<br/>부트캠프를
+                    지금당장<br/>화면을<br/>90도<br/>돌리고<br/>부트캠프를
                     <br/>검색하세요!!!!</p>
                 </div>
             </div>

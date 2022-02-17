@@ -16,9 +16,9 @@ function BootCard(props) {
                         <img alt="" src={'../../' + (props.boots.image_id) + '.png'} onError={onErrorImg} width="100%" height="100%"/>
                     </Link>
                 </div>
-                <h6 id="boot-brand-name">
+                <p id="boot-brand-name">
                     {props.boots.bootcamp_name}
-                </h6>
+                </p>
             </div>
         </div>
     );

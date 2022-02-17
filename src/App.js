@@ -34,10 +34,10 @@ function MainPage()
                 <div>
                     <ImgBox/>
                 </div>
-                
-                <div>
+      
+                {/* <div>
                     <Footer/>
-                </div>
+                </div> */}
             </div>
             <div id="error">
                 <div> 

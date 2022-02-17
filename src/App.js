@@ -7,6 +7,7 @@ import MainBanner from './Component/MainBanner/MainBanner';
 import Footer from './Component/Footer/Footer';
 import ImgBox from './Component/ImgBox/ImgBox';
 import Details from './Component/Details/Details';
+import ErrorPage from './Component/Error/Error';
 import SearchPage from './Component/Search/Search';
 import IntroducePage from './Component/Introduce/Introduce';
 // import Ad from './Component/Ad/Ad';
@@ -49,14 +50,6 @@ function MainPage()
     );
 }
 
-function ErrorPage()
-{
-    return(
-        <div>
-            <h1>Not Found</h1>
-        </div>
-    );
-}
 
 function App() {
     return (

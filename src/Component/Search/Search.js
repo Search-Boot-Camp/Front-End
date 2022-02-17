@@ -35,6 +35,7 @@ const Search = () => {
 
             if (!completed) {
                 setData(result.data);
+                setFlag(true);
                 // data 출력
                 console.log(data);
             }
@@ -76,7 +77,12 @@ const Search = () => {
                         </div>
                         <hr width="80%"/>
                     </div>
-
+                    <div>
+                        {
+                            (data.length === 0 && flag === false) ? <div id="result-str">검색을 해주세요!</div>
+                            : <div className='img-box'><ImgBox data={data}/></div>
+                        }
+                    </div>
                     <div>
                         {
                             (data.length === 0 && search !== " ") 

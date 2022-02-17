@@ -77,49 +77,19 @@
     width: 260px;
 }
 
-#memberIntroduce #frontMemberIntroduce #front1 {
+#front {
     margin-top: 50px;
     display: flex;
+    
 }
 
-#memberIntroduce #frontMemberIntroduce #front1 #front1text{
+#fronttext{
     margin-left: 30px;
 }
 
 #memberIntroduce #frontMemberIntroduce #front2{
     margin-top: 50px;
     display: flex;
-}
-
-#memberIntroduce #frontMemberIntroduce #front2 #front2text{
-    margin-left: 30px;
-}
-
-#memberIntroduce #frontMemberIntroduce #front3{
-    margin-top: 50px;
-    display: flex;
-}
-
-#memberIntroduce #frontMemberIntroduce #front3 #front3text{
-    margin-left: 30px;
-}
-
-#memberIntroduce #frontMemberIntroduce #front4{
-    margin-top: 50px;
-    display: flex;
-}
-
-#memberIntroduce #frontMemberIntroduce #front4 #front4text{
-    margin-left: 30px;
-}
-
-#memberIntroduce #frontMemberIntroduce #front5{
-    margin-top: 50px;
-    display: flex;
-}
-
-#memberIntroduce #frontMemberIntroduce #front5 #front5text{
-    margin-left: 30px;
 }
 
 #sogam p{
@@ -177,39 +147,11 @@
     margin-top: 200px;
 }
 
-#back1{
+#back{
     margin-top: 50px;
     display: flex;
 }
 
-#back1text{
+#backtext{
     margin-left: 30px;
 }
-
-#back2{
-    margin-top: 50px;
-    display: flex;
-}
-
-#back2text{
-    margin-left: 30px;
-}
-
-#back3{
-    margin-top: 50px;
-    display: flex;
-}
-
-#back3text{
-    margin-left: 30px;
-}
-
-#back4{
-    margin-top: 50px;
-    display: flex;
-}
-
-#back4text{
-    margin-left: 30px;
-}
-
